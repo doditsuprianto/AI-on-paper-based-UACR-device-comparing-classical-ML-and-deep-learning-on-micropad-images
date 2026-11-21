@@ -40,7 +40,7 @@ jupyter lab UACR_Pipeline.ipynb          # Run all; UACR_FAST=1 = quick smoke te
 
 ## How to cite
 
-Please cite the article and the archived release (Zenodo DOI `10.5281/zenodo.24415467`); see [`CITATION.cff`](CITATION.cff).
+Please cite the article and the archived release (Zenodo DOI `10.5281/zenodo.24415466`, which always resolves to the latest version); see [`CITATION.cff`](CITATION.cff).
 
 ## Licence
 
