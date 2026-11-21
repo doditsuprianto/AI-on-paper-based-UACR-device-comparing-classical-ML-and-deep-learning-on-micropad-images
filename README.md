@@ -16,7 +16,7 @@ point-of-care diagnosis device.
 |---|---|
 | [`Model Machine Learning/`](Model%20Machine%20Learning) | One notebook (`UACR_Pipeline.ipynb`) that runs the whole study: image pairing, ROI detection, feature extraction, EDA, cleansing, feature selection, five classical models, CNNs, nested CV, statistics, deployment bundle. |
 | [`Diagnosis Application/`](Diagnosis%20Application) | PyQt5 application of the prototype device (Armbian single-board computer): patient database, image capture, ROI crop, classification with the deployed SVM bundle, PDF report. |
-| [`Design Diagnosis Device/`](Design%20Diagnosis%20Device) | Mechanical design of the device (CAD files; to be added). |
+| [`Design Diagnosis Device/`](Design%20Diagnosis%20Device) | Mechanical design of the device (FreeCAD source, STL files, print-ready 3MF files and bill of materials). |
 
 ## Data
 
@@ -32,15 +32,15 @@ Because of the size, clone with `git clone --depth 1 <url>` or download the arch
 ## Quick start
 
 ```bash
-git clone https://github.com/[ACCOUNT]/uacr-micropad-classification.git
-cd uacr-micropad-classification/"Model Machine Learning"
+git clone https://github.com/doditsuprianto/AI-on-paper-based-UACR-device-comparing-classical-ML-and-deep-learning-on-micropad-images.git
+cd AI-on-paper-based-UACR-device-comparing-classical-ML-and-deep-learning-on-micropad-images/"Model Machine Learning"
 pip install -r requirements.txt
 jupyter lab UACR_Pipeline.ipynb          # Run all; UACR_FAST=1 = quick smoke test only
 ```
 
 ## How to cite
 
-Please cite the article and the archived release (Zenodo DOI `10.5281/zenodo.[DOI]`); see [`CITATION.cff`](CITATION.cff).
+Please cite the article and the archived release (Zenodo DOI `10.5281/zenodo.24415467`); see [`CITATION.cff`](CITATION.cff).
 
 ## Licence
 

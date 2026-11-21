@@ -4,10 +4,10 @@ title: "UACR micro-paper image classification: code, image dataset, results, dia
 type: software
 abstract: "Complete analysis notebook with stored results, image dataset and de-identified label table, PyQt5 application of the prototype device, and device design files for UACR (NORMAL/MICRO/MACRO) classification from paired paper-based colorimetric images."
 version: 1.0.0
-date-released: "2026-12-01"          # update to the release date
+date-released: "2026-11-21"
 license: MIT
-repository-code: "https://github.com/[ACCOUNT]/uacr-micropad-classification"
-doi: "10.5281/zenodo.[DOI]"  # concept DOI is recommended; fill in after the first Zenodo release
+repository-code: "https://github.com/doditsuprianto/AI-on-paper-based-UACR-device-comparing-classical-ML-and-deep-learning-on-micropad-images"
+doi: "10.5281/zenodo.24415467"
 keywords:
   - point-of-care testing
   - paper-based analytical device
