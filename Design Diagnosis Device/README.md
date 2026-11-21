@@ -23,13 +23,12 @@ device is shown in Supplementary Figure S6 of the article; the component list is
 ## Fabrication
 
 * Design: FreeCAD 1.0.1. Each body of the project was exported to STL.
-* Printer and material: ELEGOO Neptune 4 Pro, white PLA+ filament, 1.75 mm, 0.4 mm nozzle.
+* Printer and material: ELEGOO Neptune 4 Max (profile in the 3MF files), white PLA+ filament, 1.75 mm, 0.4 mm nozzle.
 * Main body (`Body_...3mf`): layer height 0.20 mm, infill 15 % (grid), top and bottom thickness 0.8 mm, brim, supports.
 * Small parts (`SmallParts_...3mf`): layer height 0.15 mm, top and bottom thickness 0.9 mm, supports.
 * The 3MF files carry the Cura settings that differ from the printer profile; temperatures (bed 60 C, nozzle 200 C) come
   from the generic PLA profile.
-* The main body measures 356 mm along its longest side.
-* The two 3MF project files were exported from Cura with the machine definition `elegoo_neptune_4max`; use them for the print settings (layer height, infill, supports) and select the Neptune 4 Pro profile for your printer before slicing.
+* The main body measures 356 mm along its longest side and needs a large bed (the Neptune 4 Max bed is 420 x 420 mm).
 * To print another part, load its STL in the slicer with the same profile, or open the 3MF files above and replace the model.
 
 Files are released under CC BY 4.0 (see `../LICENSE-DATA.md`).

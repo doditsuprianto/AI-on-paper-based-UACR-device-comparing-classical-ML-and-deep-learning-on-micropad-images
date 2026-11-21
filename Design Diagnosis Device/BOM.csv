@@ -1,5 +1,5 @@
 component,specification,source
-3D printer,"ELEGOO Neptune 4 Pro (225 x 225 x 265 mm build volume)","Tokopedia, seller charelicious"
+3D printer,"ELEGOO Neptune 4 Max (420 x 420 x 480 mm build volume)","Tokopedia, seller charelicious"
 Filament,"PLA+ white, 1.75 mm, 1 kg","Tokopedia, seller temins (tokopedia.com/temins/filament-filamen-pla-plus-putih-1-75mm-1kg-3d-printer)"
 Camera,"ELP 4K webcam, USB-C, H.264/H.265, 4K 30 fps, 10x zoom (as listed)","Alibaba, product 1601043251285"
 Illumination,"4 x HPL 3 W white LED on aluminium heatsink PCB (midpoints of the sides of the square frame at the lower end of the camera neck); 5 V, parallel, switched by TIP120 Darlington (emitter to GND, collector to LED cathodes, base from GPIO 12 of the Raspberry Pi 5), 1N4007 protection diode; colour temperature not determined","authors (see SimplePWM.py in Diagnosis Application)"
