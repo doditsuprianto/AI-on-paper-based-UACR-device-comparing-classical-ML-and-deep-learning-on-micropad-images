@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "max_difference": 0.0,
+  "n_cases": 6,
+  "rows": [
+    {
+      "sample": 101,
+      "true class": "NORMAL",
+      "decision (clean process)": "UNCERTAIN",
+      "max probability": 0.41,
+      "max |P(images) − P(training row)|": 0.0,
+      "max |P(clean process) − P(this process)|": 0.0
+    },
+    {
+      "sample": 124,
+      "true class": "NORMAL",
+      "decision (clean process)": "UNCERTAIN",
+      "max probability": 0.434,
+      "max |P(images) − P(training row)|": 0.0,
+      "max |P(clean process) − P(this process)|": 0.0
+    },
+    {
+      "sample": 38,
+      "true class": "MICRO",
+      "decision (clean process)": "MICRO",
+      "max probability": 0.528,
+      "max |P(images) − P(training row)|": 0.0,
+      "max |P(clean process) − P(this process)|": 0.0
+    },
+    {
+      "sample": 129,
+      "true class": "MICRO",
+      "decision (clean process)": "MICRO",
+      "max probability": 0.598,
+      "max |P(images) − P(training row)|": 0.0,
+      "max |P(clean process) − P(this process)|": 0.0
+    },
+    {
+      "sample": 48,
+      "true class": "MACRO",
+      "decision (clean process)": "MACRO",
+      "max probability": 0.832,
+      "max |P(images) − P(training row)|": 0.0,
+      "max |P(clean process) − P(this process)|": 0.0
+    },
+    {
+      "sample": 5,
+      "true class": "MACRO",
+      "decision (clean process)": "MACRO",
+      "max probability": 0.817,
+      "max |P(images) − P(training row)|": 0.0,
+      "max |P(clean process) − P(this process)|": 0.0
+    }
+  ],
+  "example_multi_pair": {
+    "decision": "UNCERTAIN",
+    "most_likely_class": "NORMAL",
+    "probabilities": {
+      "NORMAL": 0.4599751202526178,
+      "MICRO": 0.33272887096511283,
+      "MACRO": 0.20729600878226936
+    },
+    "max_probability": 0.4599751202526178,
+    "uncertain": true,
+    "threshold_used": 0.53,
+    "n_pairs": 5,
+    "per_pair_probabilities": [
+      {
+        "NORMAL": 0.39019565312068216,
+        "MICRO": 0.4898938758049709,
+        "MACRO": 0.1199104710743469
+      },
+      {
+        "NORMAL": 0.35673906774321745,
+        "MICRO": 0.23288081091450621,
+        "MACRO": 0.41038012134227647
+      },
+      {
+        "NORMAL": 0.6392156983292189,
+        "MICRO": 0.26743947605486534,
+        "MACRO": 0.09334482561591571
+      },
+      {
+        "NORMAL": 0.4207280022653601,
+        "MICRO": 0.5225196851224561,
+        "MACRO": 0.05675231261218385
+      },
+      {
+        "NORMAL": 0.49299717980461005,
+        "MICRO": 0.15091050692876584,
+        "MACRO": 0.35609231326662394
+      }
+    ],
+    "quality_flags": [],
+    "input_quality_ok": true,
+    "disclaimer": "Research prototype. Not validated for clinical decisions; expected performance is limited (see model_card.md). Confirm results with the laboratory method."
+  }
+}

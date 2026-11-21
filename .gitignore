@@ -1,0 +1,14 @@
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+# application runtime data (patient database, captures, reports) - never commit real patients
+Diagnosis Application/data/
+Diagnosis Application/dataset/
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

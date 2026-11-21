@@ -1,0 +1,4 @@
+﻿True class,Tests,Both correct,Only classical,Only CNN,Both wrong
+NORMAL,121,55,10,28,28
+MICRO,118,17,11,17,73
+MACRO,239,136,48,22,33

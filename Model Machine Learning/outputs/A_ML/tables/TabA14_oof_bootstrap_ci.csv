@@ -1,0 +1,6 @@
+﻿Model,Macro-F1 test level (OOF repeat 1),95% CI test level,Macro-F1 sample level,95% CI sample level,MICRO recall (test level),95% CI MICRO recall
+Logistic Regression,0.499,0.421 – 0.572,0.51,0.413 – 0.608,0.339,0.198 – 0.477
+SVM (RBF),0.511,0.435 – 0.576,0.506,0.410 – 0.600,0.237,0.135 – 0.340
+Random Forest,0.464,0.398 – 0.529,0.52,0.423 – 0.616,0.22,0.120 – 0.323
+Gradient Boosting,0.462,0.404 – 0.518,0.474,0.380 – 0.572,0.271,0.173 – 0.368
+k-NN,0.475,0.407 – 0.540,0.519,0.414 – 0.623,0.127,0.054 – 0.202

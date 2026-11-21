@@ -1,0 +1,3 @@
+﻿Contrast,Mean difference,95% CI (Nadeau–Bengio),Minimum detectable difference,Folds A better,p (Wilcoxon),p (Nadeau–Bengio),p Holm (Wilcoxon),p Holm (Nadeau–Bengio),Significant (Holm < 0.05)
+efficientnet_b0 (fine-tuned) − SVM (RBF),-0.0018,-0.083 … +0.080,0.0813,5/10,0.9219,0.962,1.0,1.0,False
+efficientnet_b0 (fine-tuned) − SVM (RBF),-0.0018,-0.083 … +0.080,0.0813,5/10,0.9219,0.962,1.0,1.0,False

@@ -1,0 +1,813 @@
+{
+  "environment": {
+    "python": "3.13.16",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "sklearn": "1.6.1",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "colab": true,
+    "fast_mode": false,
+    "started": "2026-10-30T16:02:56"
+  },
+  "config": {
+    "EXCEL_NAME": "Data_Sampel_Penelitian_UACR_With_Label.xlsx",
+    "SHEET_NAME": "Data Sampel",
+    "ID_COL": "No Sampel",
+    "LABEL_COL": "Label Kelas",
+    "MANUAL_ROOT": "",
+    "IMG_EXT": [
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".tif",
+      ".tiff",
+      ".bmp"
+    ],
+    "CLASS_ORDER": [
+      "NORMAL",
+      "MICRO",
+      "MACRO"
+    ],
+    "LABEL_MAP": {
+      "MIKRO": "MICRO",
+      "MAKRO": "MACRO"
+    },
+    "BG_DIST": 18.0,
+    "ROI_ERODE_FRAC": 0.1,
+    "MAX_SIDE": 512,
+    "SPEC_V": 0.985,
+    "SPEC_S": 0.1,
+    "USE_CACHE": true,
+    "OUTER_FOLDS": 5,
+    "OUTER_REPEATS": 2,
+    "INNER_FOLDS": 3,
+    "BOOT_N": 1000,
+    "ICC_MIN": 0.5,
+    "CORR_THR": 0.9,
+    "K_GRID": [
+      5,
+      10,
+      20
+    ],
+    "CURVE_FOLDS": 5,
+    "DIAG_REPS": 3,
+    "SEED_SENS_N": 5,
+    "PERM_N": 100,
+    "ABL_REPEATS": 3,
+    "ABSTAIN_MIN_COVERAGE": 0.6,
+    "IMG_SIZE": 224,
+    "BACKBONES": [
+      "resnet18",
+      "efficientnet_b0",
+      "mobilenet_v3_large",
+      "convnext_tiny"
+    ],
+    "PRETRAINED": true,
+    "EPOCHS": 15,
+    "BATCH": 32,
+    "LR_BACKBONE": 0.0001,
+    "LR_HEAD": 0.001,
+    "WEIGHT_DECAY": 0.01,
+    "WARMUP_EPOCHS": 1,
+    "LABEL_SMOOTH": 0.1,
+    "DROPOUT": 0.3,
+    "AUG_BRIGHT": 0.03,
+    "FREEZE_BN": true,
+    "INCLUDE_SCRATCH": true,
+    "EMB_PCA": [
+      8,
+      16,
+      32
+    ],
+    "EMB_C": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "OUTER_REPEATS_CNN": 2,
+    "GRADCAM_PER_CLASS": 2,
+    "FINAL_FIT": true,
+    "REUSE_LEGACY_CNN_CACHE": false,
+    "FAST_MODE": false,
+    "OUTER_REPEATS_FINAL": 2
+  },
+  "data": {
+    "n_tests": 478,
+    "n_samples": 100,
+    "samples_per_class": {
+      "NORMAL": 25,
+      "MICRO": 25,
+      "MACRO": 50
+    },
+    "tests_per_class": {
+      "NORMAL": 121,
+      "MICRO": 118,
+      "MACRO": 239
+    },
+    "md5_check": {
+      "mismatch_albumin": 0,
+      "mismatch_creatinine": 0
+    },
+    "image_tensor_shape": [
+      478,
+      2,
+      224,
+      224,
+      3
+    ]
+  },
+  "validation_design": {
+    "outer_folds": 5,
+    "repeats_final": 2,
+    "repeats_cnn": 2,
+    "seed_outer": "42+100+repeat",
+    "identical_to_fold_plan": true,
+    "identical_to_final_indices_checked": true
+  },
+  "classical_reference": {
+    "model": "SVM (RBF)",
+    "mean_macro_f1_test": 0.5096784865220139,
+    "all_models": {
+      "SVM (RBF)": 0.5096784865220139,
+      "Logistic Regression": 0.4947707621312481,
+      "Random Forest": 0.47707600920650595,
+      "k-NN": 0.45471743668853914,
+      "Gradient Boosting": 0.4413945280656028,
+      "Baseline: stratified random guess": 0.3324640707190143,
+      "Baseline: majority class": 0.2213306179317402
+    }
+  },
+  "runtime": {
+    "cumulative_seconds_at_end_of_stage": {
+      "1-5 setup, inventory, labels, merge, ROI": 212.3,
+      "6 feature extraction": 652.5,
+      "7 EDA": 665.0,
+      "8 cleansing": 670.1,
+      "9 analysis set and fold plan": 671.4,
+      "9 measurement audit": 716.3,
+      "10-11 selection & validation design": 791.5,
+      "12 nested CV": 877.6,
+      "13 analysis of the selected model": 912.3,
+      "14 final training & deployment bundle": 979.7,
+      "15 report bundle": 980.0,
+      "2 load final": 980.3,
+      "3 image tensors": 1009.1,
+      "4 definitions": 1016.9,
+      "5 strategy A": 1183.4,
+      "6 audit": 1255.2,
+      "7 strategy B": 2280.7,
+      "8 comparison": 2290.1,
+      "9 training behaviour": 2291.7,
+      "10 interpretation": 2334.1,
+      "11 final fit": 2373.8
+    },
+    "total_minutes": 39.56363306442896
+  },
+  "image_module": {
+    "version": "1.0",
+    "roi_params": {
+      "BG_DIST": 18.0,
+      "ROI_ERODE_FRAC": 0.1,
+      "MAX_SIDE": 512,
+      "SPEC_V": 0.985,
+      "SPEC_S": 0.1
+    },
+    "sha256": "0dd35f167e79ae415b4b7f1dd7b58e9340462085756710554763206720c91362"
+  },
+  "architectures": [
+    {
+      "Backbone": "resnet18",
+      "Pretrained weights loaded": true,
+      "Backbone parameters (M)": 11.18,
+      "Head parameters (M)": 0.263,
+      "Feature dim per assay": 512
+    },
+    {
+      "Backbone": "efficientnet_b0",
+      "Pretrained weights loaded": true,
+      "Backbone parameters (M)": 4.01,
+      "Head parameters (M)": 0.656,
+      "Feature dim per assay": 1280
+    },
+    {
+      "Backbone": "mobilenet_v3_large",
+      "Pretrained weights loaded": true,
+      "Backbone parameters (M)": 2.97,
+      "Head parameters (M)": 0.493,
+      "Feature dim per assay": 960
+    },
+    {
+      "Backbone": "convnext_tiny",
+      "Pretrained weights loaded": true,
+      "Backbone parameters (M)": 27.82,
+      "Head parameters (M)": 0.394,
+      "Feature dim per assay": 768
+    },
+    {
+      "Backbone": "scratch",
+      "Pretrained weights loaded": "n/a (from scratch)",
+      "Backbone parameters (M)": 0.13,
+      "Head parameters (M)": 0.067,
+      "Feature dim per assay": 128
+    }
+  ],
+  "strategy_A": {
+    "embedding_dims": {
+      "resnet18": 512,
+      "efficientnet_b0": 1280,
+      "mobilenet_v3_large": 960,
+      "convnext_tiny": 768
+    },
+    "mean_macro_f1_test": {
+      "resnet18 (frozen, both)": 0.43898156151306955,
+      "resnet18 (frozen, albumin only)": 0.4727384555179904,
+      "resnet18 (frozen, creatinine only)": 0.41693663513823154,
+      "efficientnet_b0 (frozen, both)": 0.4348854224400295,
+      "efficientnet_b0 (frozen, albumin only)": 0.4582105457171056,
+      "efficientnet_b0 (frozen, creatinine only)": 0.41486241228492027,
+      "mobilenet_v3_large (frozen, both)": 0.48768363347847643,
+      "mobilenet_v3_large (frozen, albumin only)": 0.4804452040498016,
+      "mobilenet_v3_large (frozen, creatinine only)": 0.4489253692913703,
+      "convnext_tiny (frozen, both)": 0.45926841907922444,
+      "convnext_tiny (frozen, albumin only)": 0.4252241354812633,
+      "convnext_tiny (frozen, creatinine only)": 0.4106738542231255
+    },
+    "branch_ablation": {
+      "resnet18": {
+        "both": 0.439,
+        "albumin only": 0.4727,
+        "creatinine only": 0.4169
+      },
+      "efficientnet_b0": {
+        "both": 0.4349,
+        "albumin only": 0.4582,
+        "creatinine only": 0.4149
+      },
+      "mobilenet_v3_large": {
+        "both": 0.4877,
+        "albumin only": 0.4804,
+        "creatinine only": 0.4489
+      },
+      "convnext_tiny": {
+        "both": 0.4593,
+        "albumin only": 0.4252,
+        "creatinine only": 0.4107
+      },
+      "SVM (RBF) (hand-crafted, both)": {
+        "both": 0.5097,
+        "albumin only": null,
+        "creatinine only": null
+      }
+    },
+    "pca_lux_spearman": {
+      "backbone": "mobilenet_v3_large",
+      "pc1": 0.3018591093218907,
+      "pc2": 0.19232219754678914
+    }
+  },
+  "audit_cnn": {
+    "r2": {
+      "resnet18": {
+        "log albumin": 0.1724,
+        "log creatinine": 0.0788,
+        "log UACR": 0.0999,
+        "lux": 0.0225
+      },
+      "efficientnet_b0": {
+        "log albumin": 0.2674,
+        "log creatinine": 0.0841,
+        "log UACR": 0.1686,
+        "lux": 0.0601
+      },
+      "mobilenet_v3_large": {
+        "log albumin": 0.3318,
+        "log creatinine": 0.0529,
+        "log UACR": 0.1485,
+        "lux": 0.0478
+      },
+      "convnext_tiny": {
+        "log albumin": 0.2732,
+        "log creatinine": 0.0415,
+        "log UACR": 0.1308,
+        "lux": 0.0727
+      },
+      "hand-crafted features + Random Forest (Path A)": {
+        "log albumin": 0.3005,
+        "log creatinine": 0.1578,
+        "log UACR": 0.1983,
+        "lux": null
+      }
+    }
+  },
+  "strategy_B": {
+    "mean_macro_f1_test": {
+      "resnet18 (fine-tuned)": 0.4563581074367959,
+      "efficientnet_b0 (fine-tuned)": 0.5079156068343956,
+      "mobilenet_v3_large (fine-tuned)": 0.5050591881711435,
+      "convnext_tiny (fine-tuned)": 0.50453431205768,
+      "Small CNN (from scratch)": 0.4223552160940901
+    },
+    "seconds_per_task_mean": {
+      "resnet18 (fine-tuned)": 18.992784571647643,
+      "efficientnet_b0 (fine-tuned)": 34.27349808216095,
+      "mobilenet_v3_large (fine-tuned)": 20.703988075256348,
+      "convnext_tiny (fine-tuned)": 61.80790634155274,
+      "Small CNN (from scratch)": 9.448173236846923
+    },
+    "recipe": {
+      "IMG_SIZE": 224,
+      "EPOCHS": 15,
+      "BATCH": 32,
+      "LR_BACKBONE": 0.0001,
+      "LR_HEAD": 0.001,
+      "WEIGHT_DECAY": 0.01,
+      "WARMUP_EPOCHS": 1,
+      "LABEL_SMOOTH": 0.1,
+      "DROPOUT": 0.3,
+      "AUG_BRIGHT": 0.03,
+      "FREEZE_BN": true,
+      "PRETRAINED": true
+    }
+  },
+  "comparison": {
+    "mean_macro_f1_test": {
+      "Baseline: majority class": 0.2213306179317402,
+      "Baseline: stratified random guess": 0.3324640707190143,
+      "Gradient Boosting": 0.4413945280656028,
+      "Logistic Regression": 0.4947707621312481,
+      "Random Forest": 0.47707600920650595,
+      "SVM (RBF)": 0.5096784865220139,
+      "Small CNN (from scratch)": 0.4223552160940901,
+      "convnext_tiny (fine-tuned)": 0.5045343120576801,
+      "convnext_tiny (frozen, both)": 0.45926841907922433,
+      "efficientnet_b0 (fine-tuned)": 0.5079156068343955,
+      "efficientnet_b0 (frozen, both)": 0.4348854224400295,
+      "k-NN": 0.45471743668853914,
+      "mobilenet_v3_large (fine-tuned)": 0.5050591881711435,
+      "mobilenet_v3_large (frozen, both)": 0.48768363347847643,
+      "resnet18 (fine-tuned)": 0.4563581074367959,
+      "resnet18 (frozen, both)": 0.43898156151306955
+    },
+    "best_cnn": {
+      "model": "efficientnet_b0 (fine-tuned)",
+      "f1": 0.5079156068343955
+    },
+    "best_finetuned": {
+      "model": "efficientnet_b0 (fine-tuned)",
+      "f1": 0.5079156068343955
+    },
+    "friedman": {
+      "chi2": 33.207272727272766,
+      "p": 0.00012289634004639767,
+      "n_models": 10,
+      "mean_rank": {
+        "mobilenet_v3_large (fine-tuned)": 3.4,
+        "SVM (RBF)": 3.6,
+        "efficientnet_b0 (fine-tuned)": 3.8,
+        "convnext_tiny (fine-tuned)": 4.0,
+        "mobilenet_v3_large (frozen, both)": 4.4,
+        "convnext_tiny (frozen, both)": 6.5,
+        "resnet18 (fine-tuned)": 6.6,
+        "resnet18 (frozen, both)": 7.1,
+        "efficientnet_b0 (frozen, both)": 7.2,
+        "Small CNN (from scratch)": 8.4
+      }
+    },
+    "contrasts": [
+      {
+        "CNN-based model": "resnet18 (frozen, both)",
+        "Family": "CNN frozen + LR",
+        "Mean macro-F1": 0.43898,
+        "Reference (SVM (RBF))": 0.50968,
+        "Mean difference (CNN − reference)": -0.0707,
+        "Folds CNN better": 1,
+        "Folds (total)": 10,
+        "p (Wilcoxon)": 0.01953,
+        "p (Nadeau–Bengio)": 0.11206,
+        "p Holm (Wilcoxon)": 0.15625,
+        "p Holm (Nadeau–Bengio)": 0.78441,
+        "CNN significantly better": false,
+        "CNN significantly worse": false
+      },
+      {
+        "CNN-based model": "efficientnet_b0 (frozen, both)",
+        "Family": "CNN frozen + LR",
+        "Mean macro-F1": 0.43489,
+        "Reference (SVM (RBF))": 0.50968,
+        "Mean difference (CNN − reference)": -0.07479,
+        "Folds CNN better": 2,
+        "Folds (total)": 10,
+        "p (Wilcoxon)": 0.01953,
+        "p (Nadeau–Bengio)": 0.09663,
+        "p Holm (Wilcoxon)": 0.15625,
+        "p Holm (Nadeau–Bengio)": 0.77301,
+        "CNN significantly better": false,
+        "CNN significantly worse": false
+      },
+      {
+        "CNN-based model": "mobilenet_v3_large (frozen, both)",
+        "Family": "CNN frozen + LR",
+        "Mean macro-F1": 0.48768,
+        "Reference (SVM (RBF))": 0.50968,
+        "Mean difference (CNN − reference)": -0.02199,
+        "Folds CNN better": 4,
+        "Folds (total)": 10,
+        "p (Wilcoxon)": 0.32227,
+        "p (Nadeau–Bengio)": 0.62225,
+        "p Holm (Wilcoxon)": 1.0,
+        "p Holm (Nadeau–Bengio)": 1.0,
+        "CNN significantly better": false,
+        "CNN significantly worse": false
+      },
+      {
+        "CNN-based model": "convnext_tiny (frozen, both)",
+        "Family": "CNN frozen + LR",
+        "Mean macro-F1": 0.45927,
+        "Reference (SVM (RBF))": 0.50968,
+        "Mean difference (CNN − reference)": -0.05041,
+        "Folds CNN better": 2,
+        "Folds (total)": 10,
+        "p (Wilcoxon)": 0.06445,
+        "p (Nadeau–Bengio)": 0.28859,
+        "p Holm (Wilcoxon)": 0.32227,
+        "p Holm (Nadeau–Bengio)": 1.0,
+        "CNN significantly better": false,
+        "CNN significantly worse": false
+      },
+      {
+        "CNN-based model": "resnet18 (fine-tuned)",
+        "Family": "CNN fine-tuned",
+        "Mean macro-F1": 0.45636,
+        "Reference (SVM (RBF))": 0.50968,
+        "Mean difference (CNN − reference)": -0.05332,
+        "Folds CNN better": 2,
+        "Folds (total)": 10,
+        "p (Wilcoxon)": 0.01953,
+        "p (Nadeau–Bengio)": 0.14428,
+        "p Holm (Wilcoxon)": 0.15625,
+        "p Holm (Nadeau–Bengio)": 0.86567,
+        "CNN significantly better": false,
+        "CNN significantly worse": false
+      },
+      {
+        "CNN-based model": "efficientnet_b0 (fine-tuned)",
+        "Family": "CNN fine-tuned",
+        "Mean macro-F1": 0.50792,
+        "Reference (SVM (RBF))": 0.50968,
+        "Mean difference (CNN − reference)": -0.00176,
+        "Folds CNN better": 5,
+        "Folds (total)": 10,
+        "p (Wilcoxon)": 0.92188,
+        "p (Nadeau–Bengio)": 0.96197,
+        "p Holm (Wilcoxon)": 1.0,
+        "p Holm (Nadeau–Bengio)": 1.0,
+        "CNN significantly better": false,
+        "CNN significantly worse": false
+      },
+      {
+        "CNN-based model": "mobilenet_v3_large (fine-tuned)",
+        "Family": "CNN fine-tuned",
+        "Mean macro-F1": 0.50506,
+        "Reference (SVM (RBF))": 0.50968,
+        "Mean difference (CNN − reference)": -0.00462,
+        "Folds CNN better": 6,
+        "Folds (total)": 10,
+        "p (Wilcoxon)": 0.92188,
+        "p (Nadeau–Bengio)": 0.88021,
+        "p Holm (Wilcoxon)": 1.0,
+        "p Holm (Nadeau–Bengio)": 1.0,
+        "CNN significantly better": false,
+        "CNN significantly worse": false
+      },
+      {
+        "CNN-based model": "convnext_tiny (fine-tuned)",
+        "Family": "CNN fine-tuned",
+        "Mean macro-F1": 0.50453,
+        "Reference (SVM (RBF))": 0.50968,
+        "Mean difference (CNN − reference)": -0.00514,
+        "Folds CNN better": 4,
+        "Folds (total)": 10,
+        "p (Wilcoxon)": 0.92188,
+        "p (Nadeau–Bengio)": 0.89599,
+        "p Holm (Wilcoxon)": 1.0,
+        "p Holm (Nadeau–Bengio)": 1.0,
+        "CNN significantly better": false,
+        "CNN significantly worse": false
+      },
+      {
+        "CNN-based model": "Small CNN (from scratch)",
+        "Family": "CNN fine-tuned",
+        "Mean macro-F1": 0.42236,
+        "Reference (SVM (RBF))": 0.50968,
+        "Mean difference (CNN − reference)": -0.08732,
+        "Folds CNN better": 0,
+        "Folds (total)": 10,
+        "p (Wilcoxon)": 0.00195,
+        "p (Nadeau–Bengio)": 0.06685,
+        "p Holm (Wilcoxon)": 0.01758,
+        "p Holm (Nadeau–Bengio)": 0.60162,
+        "CNN significantly better": false,
+        "CNN significantly worse": true
+      }
+    ],
+    "decision_rule": {
+      "cnn_replaces_classical": false,
+      "best_cnn": "efficientnet_b0 (fine-tuned)",
+      "mean_difference": -0.001762879687618274,
+      "p_holm_wilcoxon": 1.0,
+      "p_holm_nb": 1.0
+    },
+    "vs_baselines": [
+      {
+        "CNN-based model": "resnet18 (frozen, both)",
+        "Baseline": "Baseline: majority class",
+        "Mean difference (model − baseline)": 0.21765,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "resnet18 (frozen, both)",
+        "Baseline": "Baseline: stratified random guess",
+        "Mean difference (model − baseline)": 0.10652,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "efficientnet_b0 (frozen, both)",
+        "Baseline": "Baseline: majority class",
+        "Mean difference (model − baseline)": 0.21355,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "efficientnet_b0 (frozen, both)",
+        "Baseline": "Baseline: stratified random guess",
+        "Mean difference (model − baseline)": 0.10242,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "mobilenet_v3_large (frozen, both)",
+        "Baseline": "Baseline: majority class",
+        "Mean difference (model − baseline)": 0.26635,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "mobilenet_v3_large (frozen, both)",
+        "Baseline": "Baseline: stratified random guess",
+        "Mean difference (model − baseline)": 0.15522,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "convnext_tiny (frozen, both)",
+        "Baseline": "Baseline: majority class",
+        "Mean difference (model − baseline)": 0.23794,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "convnext_tiny (frozen, both)",
+        "Baseline": "Baseline: stratified random guess",
+        "Mean difference (model − baseline)": 0.1268,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "resnet18 (fine-tuned)",
+        "Baseline": "Baseline: majority class",
+        "Mean difference (model − baseline)": 0.23503,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "resnet18 (fine-tuned)",
+        "Baseline": "Baseline: stratified random guess",
+        "Mean difference (model − baseline)": 0.12389,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "efficientnet_b0 (fine-tuned)",
+        "Baseline": "Baseline: majority class",
+        "Mean difference (model − baseline)": 0.28658,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "efficientnet_b0 (fine-tuned)",
+        "Baseline": "Baseline: stratified random guess",
+        "Mean difference (model − baseline)": 0.17545,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "mobilenet_v3_large (fine-tuned)",
+        "Baseline": "Baseline: majority class",
+        "Mean difference (model − baseline)": 0.28373,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "mobilenet_v3_large (fine-tuned)",
+        "Baseline": "Baseline: stratified random guess",
+        "Mean difference (model − baseline)": 0.1726,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "convnext_tiny (fine-tuned)",
+        "Baseline": "Baseline: majority class",
+        "Mean difference (model − baseline)": 0.2832,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "convnext_tiny (fine-tuned)",
+        "Baseline": "Baseline: stratified random guess",
+        "Mean difference (model − baseline)": 0.17207,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "Small CNN (from scratch)",
+        "Baseline": "Baseline: majority class",
+        "Mean difference (model − baseline)": 0.20102,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      },
+      {
+        "CNN-based model": "Small CNN (from scratch)",
+        "Baseline": "Baseline: stratified random guess",
+        "Mean difference (model − baseline)": 0.08989,
+        "p (Wilcoxon)": 0.00195,
+        "p Holm": 0.03516
+      }
+    ],
+    "bootstrap": [
+      {
+        "Model": "efficientnet_b0 (fine-tuned)",
+        "Pooled OOF macro-F1 (repeat 1, test level)": 0.5348,
+        "95% CI (cluster bootstrap)": "0.461 – 0.602",
+        "MICRO recall": 0.2881,
+        "95% CI MICRO recall": "0.150 – 0.425"
+      },
+      {
+        "Model": "SVM (RBF)",
+        "Pooled OOF macro-F1 (repeat 1, test level)": 0.5105,
+        "95% CI (cluster bootstrap)": "0.435 – 0.576",
+        "MICRO recall": 0.2373,
+        "95% CI MICRO recall": "0.135 – 0.340"
+      }
+    ],
+    "paired_bootstrap": [
+      {
+        "Comparison": "efficientnet_b0 (fine-tuned) − SVM (RBF)",
+        "Observed difference of pooled macro-F1": 0.0243,
+        "95% CI of the difference": "-0.046 – +0.089",
+        "P(difference > 0)": 0.759,
+        "CI excludes 0": false
+      }
+    ],
+    "exploratory_ensemble": {
+      "f1_ref": 0.5096784865220139,
+      "f1_cnn": 0.5079156068343956,
+      "f1_ens": 0.5039985332749397,
+      "p_wilcoxon": 0.845703125
+    }
+  },
+  "training_behaviour": {
+    "peeking": [
+      {
+        "Model": "resnet18 (fine-tuned)",
+        "Final-epoch diagnostic F1": 0.4583,
+        "Best-epoch diagnostic F1 (peeking)": 0.4656,
+        "Epoch of the maximum": 9,
+        "Optimism of peeking": 0.0072,
+        "Final train loss": 0.8675,
+        "Final test log-loss": 1.0062,
+        "Min test log-loss": 0.9857,
+        "Epoch of min test log-loss": 5
+      },
+      {
+        "Model": "efficientnet_b0 (fine-tuned)",
+        "Final-epoch diagnostic F1": 0.5057,
+        "Best-epoch diagnostic F1 (peeking)": 0.5057,
+        "Epoch of the maximum": 15,
+        "Optimism of peeking": 0.0,
+        "Final train loss": 0.727,
+        "Final test log-loss": 0.96,
+        "Min test log-loss": 0.9362,
+        "Epoch of min test log-loss": 7
+      },
+      {
+        "Model": "mobilenet_v3_large (fine-tuned)",
+        "Final-epoch diagnostic F1": 0.5043,
+        "Best-epoch diagnostic F1 (peeking)": 0.5056,
+        "Epoch of the maximum": 14,
+        "Optimism of peeking": 0.0013,
+        "Final train loss": 0.7349,
+        "Final test log-loss": 0.9557,
+        "Min test log-loss": 0.9468,
+        "Epoch of min test log-loss": 11
+      },
+      {
+        "Model": "convnext_tiny (fine-tuned)",
+        "Final-epoch diagnostic F1": 0.5019,
+        "Best-epoch diagnostic F1 (peeking)": 0.5201,
+        "Epoch of the maximum": 10,
+        "Optimism of peeking": 0.0182,
+        "Final train loss": 0.6618,
+        "Final test log-loss": 0.9763,
+        "Min test log-loss": 0.9473,
+        "Epoch of min test log-loss": 8
+      },
+      {
+        "Model": "Small CNN (from scratch)",
+        "Final-epoch diagnostic F1": 0.4242,
+        "Best-epoch diagnostic F1 (peeking)": 0.4317,
+        "Epoch of the maximum": 7,
+        "Optimism of peeking": 0.0076,
+        "Final train loss": 0.9233,
+        "Final test log-loss": 1.0841,
+        "Min test log-loss": 1.0532,
+        "Epoch of min test log-loss": 6
+      }
+    ]
+  },
+  "interpretation": {
+    "border_ratio": [
+      {
+        "Branch": "Albumin",
+        "Border share of attention (mean)": 0.8518000245094299,
+        "Border share of area": 0.6314,
+        "Ratio (1 = uniform)": 1.3492
+      },
+      {
+        "Branch": "Creatinine",
+        "Border share of attention (mean)": 0.800599992275238,
+        "Border share of area": 0.6314,
+        "Ratio (1 = uniform)": 1.268
+      }
+    ],
+    "perturbation": [
+      {
+        "Test image variant": "original",
+        "Macro-F1": 0.6171,
+        "Accuracy": 0.6875,
+        "Predictions changed vs original (%)": 0.0,
+        "Share predicted MACRO (%)": 47.9167
+      },
+      {
+        "Test image variant": "brightness −15 %",
+        "Macro-F1": 0.5702,
+        "Accuracy": 0.5833,
+        "Predictions changed vs original (%)": 32.2917,
+        "Share predicted MACRO (%)": 36.4583
+      },
+      {
+        "Test image variant": "brightness −8 %",
+        "Macro-F1": 0.5908,
+        "Accuracy": 0.625,
+        "Predictions changed vs original (%)": 13.5417,
+        "Share predicted MACRO (%)": 39.5833
+      },
+      {
+        "Test image variant": "brightness +8 %",
+        "Macro-F1": 0.6177,
+        "Accuracy": 0.6771,
+        "Predictions changed vs original (%)": 13.5417,
+        "Share predicted MACRO (%)": 45.8333
+      },
+      {
+        "Test image variant": "brightness +15 %",
+        "Macro-F1": 0.6033,
+        "Accuracy": 0.6354,
+        "Predictions changed vs original (%)": 22.9167,
+        "Share predicted MACRO (%)": 36.4583
+      },
+      {
+        "Test image variant": "grey-scale (colour removed)",
+        "Macro-F1": 0.5027,
+        "Accuracy": 0.6354,
+        "Predictions changed vs original (%)": 23.9583,
+        "Share predicted MACRO (%)": 50.0
+      }
+    ]
+  },
+  "final_fit": {
+    "model": "efficientnet_b0",
+    "weights": "cnn_efficientnet_b0_final_weights.pt",
+    "roundtrip_selftest": true
+  },
+  "summary": {
+    "rule_met": false,
+    "best_cnn": "efficientnet_b0 (fine-tuned)",
+    "reference": "SVM (RBF)"
+  }
+}

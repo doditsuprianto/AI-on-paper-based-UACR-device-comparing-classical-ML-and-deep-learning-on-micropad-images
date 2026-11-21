@@ -1,0 +1,10 @@
+﻿CNN-based model,Family,Mean macro-F1,Reference (SVM (RBF)),Mean difference (CNN − reference),Folds CNN better,Folds (total),p (Wilcoxon),p (Nadeau–Bengio),p Holm (Wilcoxon),p Holm (Nadeau–Bengio),CNN significantly better,CNN significantly worse
+"resnet18 (frozen, both)",CNN frozen + LR,0.439,0.5097,-0.0707,1,10,0.0195,0.1121,0.1562,0.7844,False,False
+"efficientnet_b0 (frozen, both)",CNN frozen + LR,0.4349,0.5097,-0.0748,2,10,0.0195,0.0966,0.1562,0.773,False,False
+"mobilenet_v3_large (frozen, both)",CNN frozen + LR,0.4877,0.5097,-0.022,4,10,0.3223,0.6222,1.0,1.0,False,False
+"convnext_tiny (frozen, both)",CNN frozen + LR,0.4593,0.5097,-0.0504,2,10,0.0645,0.2886,0.3223,1.0,False,False
+resnet18 (fine-tuned),CNN fine-tuned,0.4564,0.5097,-0.0533,2,10,0.0195,0.1443,0.1562,0.8657,False,False
+efficientnet_b0 (fine-tuned),CNN fine-tuned,0.5079,0.5097,-0.0018,5,10,0.9219,0.962,1.0,1.0,False,False
+mobilenet_v3_large (fine-tuned),CNN fine-tuned,0.5051,0.5097,-0.0046,6,10,0.9219,0.8802,1.0,1.0,False,False
+convnext_tiny (fine-tuned),CNN fine-tuned,0.5045,0.5097,-0.0051,4,10,0.9219,0.896,1.0,1.0,False,False
+Small CNN (from scratch),CNN fine-tuned,0.4224,0.5097,-0.0873,0,10,0.002,0.0668,0.0176,0.6016,False,True

@@ -1,0 +1,26 @@
+﻿Feature,selection frequency,source,group
+alb__glcm_entropy,0.9,Albumin,Texture & spatial
+alb__lbp_6,0.9,Albumin,Texture & spatial
+alb__lbp_2,0.9,Albumin,Texture & spatial
+alb__R_std,0.8,Albumin,Colour-channel statistics
+cre__lbp_3,0.7,Creatinine,Texture & spatial
+alb__glcm_homogeneity,0.6,Albumin,Texture & spatial
+alb__gray_entropy,0.6,Albumin,Texture & spatial
+alb__V_p10,0.6,Albumin,Colour-channel statistics
+alb__grad_std,0.5,Albumin,Texture & spatial
+alb__grad_mean,0.5,Albumin,Texture & spatial
+alb__R_p10,0.5,Albumin,Colour-channel statistics
+alb__G_p10,0.4,Albumin,Colour-channel statistics
+cre__lbp_8,0.4,Creatinine,Texture & spatial
+alb__lbp_9,0.4,Albumin,Texture & spatial
+alb__lab_hue_cos,0.3,Albumin,Colour indices
+alb__hue_sin,0.3,Albumin,Hue
+alb__gray_p90,0.3,Albumin,Colour-channel statistics
+cre__a_p10,0.3,Creatinine,Colour-channel statistics
+cre__grad_std,0.3,Creatinine,Texture & spatial
+alb__lbp_4,0.3,Albumin,Texture & spatial
+x__abs_R_lr,0.3,Cross-image,Cross-image
+alb__gray_cv,0.2,Albumin,Colour indices
+alb__G_iqr,0.2,Albumin,Colour-channel statistics
+x__gray_mean_lr,0.2,Cross-image,Cross-image
+cre__lbp_6,0.2,Creatinine,Texture & spatial

@@ -1,0 +1,28 @@
+﻿number,file,caption
+A1,TabA01_diagnostic_regression.csv,"Measurement audit: grouped cross-validated prediction of the laboratory analytes from image features. 3 × 5-fold, folds are grouped by sample."
+A2,TabA02_within_band_response.csv,Within-band response: Spearman |ρ| between albumin-image features and log₁₀ laboratory albumin inside each albumin band; the permutation null (95th percentile of the maximum |ρ| over all features when the target is shuffled) shows what the best feature would reach by chance.
+A3,TabA03_reliability_by_source.csv,"Reliability (ICC) before the filter and illumination sensitivity after the filter, by image source."
+A4,TabA04_error_budget.csv,"Error budget: macro-F1 obtained when an analyte is replaced by its laboratory value (oracle rows) versus predicted from images (Random Forest regressors, grouped cross-validation). Oracle rows are upper bounds, not achievable results."
+A5,TabA05_feature_significance_full.csv,"Significance test results for all features (sample level, descriptive): ANOVA, Kruskal–Wallis (q-FDR), ε², ordinal Spearman, mutual information, pairwise tests (Holm)."
+A6,TabA06_top20_significant_features.csv,"The 20 features with the highest composite rank and their significance statistics (all samples, descriptive)."
+A7,TabA07_k_feature_curve.csv,Cross-validated macro-F1 per model for different numbers of selected features k (default hyperparameters).
+A8,TabA08_model_definitions.csv,The five competing models and their tuning grids (identical in the nested CV and the final fit).
+A9,TabA09_nested_cv_test_level.csv,"Nested cross-validation, TEST level (one image pair = one measurement): mean ± SD over 10 outer folds (5 folds × 2 repeats). Chance level of macro-F1 ≈ 0.33 (the majority-class baseline is lower). PRIMARY RESULT."
+A10,TabA10_nested_cv_sample_level.csv,"Nested cross-validation, SAMPLE level (repeat probabilities averaged before the decision): mean ± SD over 10 outer folds. SECONDARY RESULT."
+A11,TabA11_model_pairwise_tests.csv,"Pairwise comparison of the five models by per-outer-fold macro-F1 (test level): Wilcoxon signed-rank and Nadeau–Bengio corrected resampled t-test, each Holm-corrected over the 10 pairs. Friedman χ² = 10.24, p = 0.0366. Folds overlap, so the p-values are indicative."
+A12,TabA12_model_ranks.csv,Mean rank of each model over the outer folds (Friedman ranking) with the spread of fold-wise macro-F1.
+A13,TabA13_per_class_metrics.csv,"Pooled out-of-fold precision, recall and F1 per class (nested CV repeat 1, test level)."
+A14,TabA14_oof_bootstrap_ci.csv,Pooled out-of-fold macro-F1 (nested CV repeat 1) with 95% cluster-bootstrap confidence intervals (1000 resamples of samples) — the uncertainty due to the small number of samples.
+A15,TabA15_tuning_stability.csv,"Stability of the tuned configuration over the 10 outer folds (chosen k, most frequent hyperparameter set) and the optimism of the inner-CV score relative to the outer-fold score."
+A16,TabA16_seed_sensitivity.csv,"Sensitivity of the nested-CV estimate of SVM (RBF) to the random division into folds: 5 additional 5-fold nested CVs with different split seeds, and the two repeats of the main run."
+A17,TabA17_ablation.csv,"Ablation with the configuration of SVM (RBF) (k = 10; sample-grouped 5-fold × 3 cross-validation, identical folds for all subsets). Not directly comparable with the nested-CV estimate (different splits, no re-tuning); compare rows with each other."
+A18,TabA18_feature_stability.csv,Feature-selection stability of SVM (RBF): proportion of the 10 outer folds in which the feature was selected (the k and the features are those of the tuned model of each fold).
+A19,TabA19_feature_stability_by_model.csv,Stability of the selected feature sets for the five models (over the 10 outer folds).
+A20,TabA20_permutation_importance.csv,"Permutation importance of the selected features of SVM (RBF) on the test part of each of the 5 grouped folds (drop of macro-F1 when a feature is shuffled; 30 shuffles), averaged over the folds in which the feature was selected."
+A21,TabA21_misclassified_samples.csv,"Samples misclassified by SVM (RBF) (nested-CV OOF repeat 1, sample level); sorted by how close the UACR is to the nearest threshold (30 or 300 mg/g)."
+A22,TabA22_error_by_threshold_distance.csv,"Error rate of SVM (RBF) (sample level, OOF repeat 1) by the distance of the laboratory UACR to the nearest class threshold; errors concentrated near thresholds indicate label ambiguity rather than model failure."
+A23,TabA23_abstain_thresholds.csv,"The uncertain-result (""UNCERTAIN"") thresholds stored in the deployment bundle and what they do to coverage and performance (SVM (RBF), OOF repeat 1). EXPLORATORY: confirm on independent data before use."
+A24,TabA24_final_training_five_models.csv,"Final training of the five models on all samples (GridSearchCV, sample-grouped 3-fold, macro-F1). The inner-CV score is the tuning score and is optimistic; the honest estimate is the outer-fold macro-F1 of Stage 13 (last numeric column)."
+A25,TabA25_selected_features.csv,"The 10 features used by the deployed model (SVM (RBF)), with descriptive significance (all samples), how often they were chosen in the nested-CV folds, and permutation importance."
+A26,TabA26_bundle_selftest.csv,Self-test of the deployment bundle on six image pairs: probabilities recomputed from the images by the bundle (in this process and in a clean Python process that has only the three bundle files) versus the probabilities from the training feature matrix.
+A27,TabA27_figure_list.csv,List of figures produced by the notebook (for manuscript numbering).

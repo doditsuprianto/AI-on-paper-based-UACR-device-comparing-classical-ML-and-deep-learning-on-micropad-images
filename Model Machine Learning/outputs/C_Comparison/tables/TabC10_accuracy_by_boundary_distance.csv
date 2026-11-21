@@ -1,0 +1,4 @@
+﻿bin,n,classical,cnn,median |log10 distance|
+near a boundary,33,0.455,0.515,0.158
+intermediate,33,0.576,0.636,0.399
+far from a boundary,34,0.794,0.735,0.851

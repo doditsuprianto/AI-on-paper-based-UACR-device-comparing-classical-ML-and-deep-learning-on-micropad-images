@@ -1,0 +1,6 @@
+﻿Backbone,log albumin,log creatinine,log UACR,lux
+resnet18,0.172,0.079,0.1,0.023
+efficientnet_b0,0.267,0.084,0.169,0.06
+mobilenet_v3_large,0.332,0.053,0.148,0.048
+convnext_tiny,0.273,0.042,0.131,0.073
+hand-crafted features + Random Forest (Path A),0.3,0.158,0.198,

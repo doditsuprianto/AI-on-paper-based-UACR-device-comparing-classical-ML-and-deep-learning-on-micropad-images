@@ -1,0 +1,2 @@
+﻿Comparison,Observed difference of pooled macro-F1,95% CI of the difference,P(difference > 0),CI excludes 0
+efficientnet_b0 (fine-tuned) − SVM (RBF),0.024,-0.046 – +0.089,0.759,False

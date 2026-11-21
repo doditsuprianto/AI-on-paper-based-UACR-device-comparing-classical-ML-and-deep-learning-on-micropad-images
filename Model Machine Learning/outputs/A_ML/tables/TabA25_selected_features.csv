@@ -1,0 +1,11 @@
+﻿order,feature,source,group,F_anova,epsilon2,rho_ordinal,MI,q_FDR,selection frequency in nested CV,permutation importance (macro-F1 drop)
+1,alb__V_p10,Albumin,Colour-channel statistics,13.2605,0.2546,-0.5046,0.1865,0.0001,0.6,0.0004
+2,alb__lbp_6,Albumin,Texture & spatial,15.9373,0.2285,0.4586,0.1917,0.0001,0.9,0.0311
+3,alb__glcm_homogeneity,Albumin,Texture & spatial,13.1744,0.2454,-0.471,0.0826,0.0001,0.6,-0.0075
+4,alb__R_std,Albumin,Colour-channel statistics,9.5005,0.2713,0.508,0.1358,0.0001,0.8,0.0181
+5,alb__lbp_2,Albumin,Texture & spatial,12.8464,0.1928,0.4293,0.161,0.0003,0.9,0.0112
+6,alb__glcm_entropy,Albumin,Texture & spatial,10.8982,0.2642,0.4871,0.1429,0.0001,0.9,-0.008
+7,alb__gray_entropy,Albumin,Texture & spatial,11.5653,0.2828,0.5118,0.105,0.0001,0.6,0.0193
+8,alb__grad_std,Albumin,Texture & spatial,8.5484,0.2019,0.4127,0.1147,0.0002,0.5,
+9,alb__gray_p90,Albumin,Colour-channel statistics,9.8821,0.189,-0.4337,0.0989,0.0003,0.3,
+10,cre__lbp_8,Creatinine,Texture & spatial,10.4141,0.2195,-0.468,0.2457,0.0001,0.4,0.0629

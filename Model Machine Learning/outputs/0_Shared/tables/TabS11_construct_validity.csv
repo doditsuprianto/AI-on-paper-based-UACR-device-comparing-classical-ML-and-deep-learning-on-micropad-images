@@ -1,0 +1,4 @@
+﻿Feature–reference pair,Best feature,Best ρ,Number with |ρ| > 0.5,Features tested
+Albumin image ↔ log urine albumin,alb__gray_cv,0.612,18,118
+Creatinine image ↔ log urine creatinine,cre__ratio_RG,0.463,0,118
+Cross-image ↔ log UACR,x__gray_std_diff,0.464,0,41

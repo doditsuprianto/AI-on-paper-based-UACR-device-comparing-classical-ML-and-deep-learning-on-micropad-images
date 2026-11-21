@@ -1,0 +1,13 @@
+﻿number,file,caption
+S1,FigS01_label_audit.png,"Label data audit: (a) class distribution, (b) UACR per class, (c) urine albumin–creatinine space with iso-UACR lines at 30 and 300 mg/g, (d) age distribution."
+S2,FigS02_inventory.png,"Characteristics of the unified dataset: (a) repeats per sample, (b) illumination per class, (c) number of tests per class."
+S3,FigS03_roi_verification.png,"Visual verification of ROI detection on example albumin–creatinine image pairs from each class: original image, ROI mask contour, and the final ROI used for quantification."
+S4,FigS04_extraction_summary.png,"Feature extraction summary: (a) feature composition, (b) distribution of ROI area, (c) proportion of specular pixels."
+S5,FigS05_key_feature_distributions.png,"Distribution of key colorimetric features (mean G, CIELAB b*, ΔE to white, saturation) in the albumin (top) and creatinine (bottom) images by class."
+S6,FigS06_feature_correlation.png,Hierarchically clustered Spearman correlation map between key albumin (alb__) and creatinine (cre__) features; red blocks indicate redundant features.
+S7,FigS07_pca.png,"PCA projection of all features: (a) by class, (b) by lux, (c) explained variance. Class silhouette on the first 5 PCs = 0.029."
+S8,FigS08_construct_validity.png,Construct validity: (top) the 12 features with the highest Spearman correlation to laboratory values; (bottom) scatter plots of the best feature. Descriptive sample-level analysis (mean of repeats).
+S9,FigS09_lux_sensitivity.png,"Feature sensitivity to illumination (lux): (a) distribution of |ρ| over all features, (b) the 12 most sensitive features. Lux-sensitive features risk carrying acquisition variation rather than chemical information."
+S10,FigS10_cleansing.png,"Data cleansing: (a) distribution of feature ICC and the reliability threshold, (b) ICC by method group and image source, (c) multivariate outliers in PCA space."
+S11,FigS11_intra_sample_cv.png,"Intra-sample coefficient of variation of feature alb__G_mean across repeats, by class; overall median = 2.03%."
+S12,FigS12_fold_plan.png,"Fold plan: (a) class composition of the outer test folds (repeat 1); (b) distribution of the number of repeats per sample, which is why splits are made by sample."

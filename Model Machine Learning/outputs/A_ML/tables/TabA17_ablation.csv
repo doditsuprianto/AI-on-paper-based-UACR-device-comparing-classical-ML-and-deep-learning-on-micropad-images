@@ -1,0 +1,16 @@
+﻿Subset,Features available,Macro-F1 (mean),SD,Difference to all features
+All features,163,0.5147,0.0981,0.0
+Albumin only,90,0.4767,0.0822,-0.038
+Creatinine only,41,0.4129,0.0688,-0.1018
+Cross-image only,32,0.4403,0.0939,-0.0744
+Albumin + Creatinine,131,0.5169,0.0963,0.0022
+Only: Colour-channel statistics,71,0.4829,0.0599,-0.0318
+Without: Colour-channel statistics,92,0.5106,0.0837,-0.0041
+Only: Hue,5,0.3908,0.0726,-0.1238
+Without: Hue,158,0.5158,0.0992,0.0011
+Only: Colour indices,26,0.5059,0.0744,-0.0087
+Without: Colour indices,137,0.5171,0.0957,0.0025
+Only: Texture & spatial,29,0.5339,0.0796,0.0193
+Without: Texture & spatial,134,0.469,0.0641,-0.0456
+Only: Cross-image,32,0.4403,0.0939,-0.0744
+Without: Cross-image,131,0.5169,0.0963,0.0022

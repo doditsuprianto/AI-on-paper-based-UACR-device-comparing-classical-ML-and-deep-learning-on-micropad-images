@@ -1,0 +1,5 @@
+﻿Distance of lab UACR to nearest threshold,Samples,Errors,Error rate (%)
+≤ 0.1 log10 from a threshold,9,6,66.7
+0.1–0.3,27,14,51.9
+0.3–0.6,33,12,36.4
+> 0.6,31,7,22.6

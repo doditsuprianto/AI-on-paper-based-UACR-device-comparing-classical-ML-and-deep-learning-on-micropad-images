@@ -1,0 +1,21 @@
+# Versions recorded for the reported run (deployment_config.json). Newer versions generally work
+# (the notebook was also executed end-to-end in fast mode with scikit-learn 1.9 / numpy 2.5), but the
+# deployed model file (.joblib) must be loaded with scikit-learn 1.6.1.
+numpy==2.1.3
+scipy==1.16.3
+pandas>=2.2
+scikit-learn==1.6.1
+scikit-image==0.25.2
+opencv-python-headless>=4.9
+joblib==1.6.0
+matplotlib>=3.8
+seaborn>=0.13
+openpyxl>=3.1
+tqdm>=4.66
+# PyTorch / torchvision: install the build that matches your CUDA (see README), e.g.
+#   pip install torch torchvision
+torch>=2.2
+torchvision>=0.17
+# Jupyter
+jupyterlab>=4.0
+ipykernel

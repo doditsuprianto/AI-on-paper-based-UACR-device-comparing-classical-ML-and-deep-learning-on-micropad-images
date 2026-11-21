@@ -1,0 +1,6 @@
+﻿Model,k chosen (count over folds),Most frequent hyperparameters,Share of folds with the most frequent set,Mean inner-CV macro-F1,Outer macro-F1 (mean),Optimism (inner − outer)
+Logistic Regression,"5: 2, 10: 1, 20: 7","{""C"": 0.1}",8/10,0.508,0.495,0.013
+SVM (RBF),"5: 1, 10: 5, 20: 4","{""C"": 1, ""gamma"": ""scale""}",4/10,0.513,0.51,0.004
+Random Forest,"5: 3, 10: 1, 20: 6","{""max_depth"": 6, ""min_samples_leaf"": 1, ""n_estimators"": 200}",4/10,0.473,0.477,-0.004
+Gradient Boosting,"5: 1, 10: 3, 20: 6","{""learning_rate"": 0.05, ""max_depth"": 2, ""max_iter"": 150}",4/10,0.477,0.441,0.035
+k-NN,"5: 2, 10: 2, 20: 6","{""n_neighbors"": 7, ""weights"": ""uniform""}",3/10,0.473,0.455,0.019

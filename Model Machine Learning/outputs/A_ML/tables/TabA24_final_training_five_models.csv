@@ -1,0 +1,6 @@
+﻿Model,"Inner-CV macro-F1 (tuning score, optimistic)",SD,Training macro-F1,Train–validation gap,k selected,Combinations tested,Time (s),"Outer-fold macro-F1 (honest, Stage 13)",Best parameters
+Logistic Regression,0.5595,0.0015,0.6296,0.0701,20,9,1.5248,0.4948,"{""C"": 0.1, ""sel__k"": 20}"
+SVM (RBF),0.5472,0.0172,0.7284,0.1812,10,18,4.3917,0.5097,"{""C"": 10, ""gamma"": 0.05, ""sel__k"": 10}"
+Random Forest,0.4973,0.0299,0.9478,0.4505,10,12,20.9185,0.4771,"{""max_depth"": null, ""min_samples_leaf"": 3, ""n_estimators"": 200, ""sel__k"": 10}"
+Gradient Boosting,0.5186,0.0151,0.9312,0.4127,20,12,9.7919,0.4414,"{""learning_rate"": 0.05, ""max_depth"": 2, ""max_iter"": 150, ""sel__k"": 20}"
+k-NN,0.4782,0.0242,1.0,0.5218,20,18,2.6149,0.4547,"{""n_neighbors"": 7, ""weights"": ""distance"", ""sel__k"": 20}"

@@ -1,0 +1,11 @@
+﻿Model A,Model B,Mean F1 difference (A−B),p (Wilcoxon),t (Nadeau–Bengio),p (Nadeau–Bengio),p Holm (Wilcoxon),p Holm (Nadeau–Bengio),significant (Holm<0.05)
+Logistic Regression,SVM (RBF),-0.0149,0.2754,-0.4779,0.6441,1.0,1.0,False
+Logistic Regression,Random Forest,0.0177,0.375,0.6435,0.5359,1.0,1.0,False
+Logistic Regression,Gradient Boosting,0.0534,0.0098,1.9344,0.0851,0.0977,0.8507,False
+Logistic Regression,k-NN,0.0401,0.0645,1.1472,0.2809,0.5156,1.0,False
+SVM (RBF),Random Forest,0.0326,0.3223,0.7746,0.4584,1.0,1.0,False
+SVM (RBF),Gradient Boosting,0.0683,0.0371,1.3873,0.1988,0.334,1.0,False
+SVM (RBF),k-NN,0.055,0.084,1.0434,0.324,0.5879,1.0,False
+Random Forest,Gradient Boosting,0.0357,0.2324,0.8819,0.4008,1.0,1.0,False
+Random Forest,k-NN,0.0224,0.1309,0.8134,0.437,0.7852,1.0,False
+Gradient Boosting,k-NN,-0.0133,0.5566,-0.349,0.7351,1.0,1.0,False

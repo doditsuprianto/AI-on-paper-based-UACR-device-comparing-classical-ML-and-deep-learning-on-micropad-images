@@ -1,0 +1,356 @@
+{
+  "environment": {
+    "python": "3.13.16",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "sklearn": "1.6.1",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "colab": true,
+    "fast_mode": false,
+    "started": "2026-10-30T15:49:48"
+  },
+  "config": {
+    "EXCEL_NAME": "Data_Sampel_Penelitian_UACR_With_Label.xlsx",
+    "SHEET_NAME": "Data Sampel",
+    "ID_COL": "No Sampel",
+    "LABEL_COL": "Label Kelas",
+    "MANUAL_ROOT": "",
+    "IMG_EXT": [
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".tif",
+      ".tiff",
+      ".bmp"
+    ],
+    "CLASS_ORDER": [
+      "NORMAL",
+      "MICRO",
+      "MACRO"
+    ],
+    "LABEL_MAP": {
+      "MIKRO": "MICRO",
+      "MAKRO": "MACRO"
+    },
+    "BG_DIST": 18.0,
+    "ROI_ERODE_FRAC": 0.1,
+    "MAX_SIDE": 512,
+    "SPEC_V": 0.985,
+    "SPEC_S": 0.1,
+    "USE_CACHE": true,
+    "OUTER_FOLDS": 5,
+    "OUTER_REPEATS": 2,
+    "INNER_FOLDS": 3,
+    "BOOT_N": 1000,
+    "ICC_MIN": 0.5,
+    "CORR_THR": 0.9,
+    "K_GRID": [
+      5,
+      10,
+      20
+    ],
+    "CURVE_FOLDS": 5,
+    "DIAG_REPS": 3,
+    "SEED_SENS_N": 5,
+    "PERM_N": 100,
+    "ABL_REPEATS": 3,
+    "ABSTAIN_MIN_COVERAGE": 0.6,
+    "IMG_SIZE": 224,
+    "BACKBONES": [
+      "resnet18",
+      "efficientnet_b0",
+      "mobilenet_v3_large",
+      "convnext_tiny"
+    ],
+    "PRETRAINED": true,
+    "EPOCHS": 15,
+    "BATCH": 32,
+    "LR_BACKBONE": 0.0001,
+    "LR_HEAD": 0.001,
+    "WEIGHT_DECAY": 0.01,
+    "WARMUP_EPOCHS": 1,
+    "LABEL_SMOOTH": 0.1,
+    "DROPOUT": 0.3,
+    "AUG_BRIGHT": 0.03,
+    "FREEZE_BN": true,
+    "INCLUDE_SCRATCH": true,
+    "EMB_PCA": [
+      8,
+      16,
+      32
+    ],
+    "EMB_C": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "OUTER_REPEATS_CNN": 2,
+    "GRADCAM_PER_CLASS": 2,
+    "FINAL_FIT": true,
+    "REUSE_LEGACY_CNN_CACHE": false,
+    "FAST_MODE": false,
+    "OUTER_REPEATS_FINAL": 2
+  },
+  "data": {
+    "albumin_files": 499,
+    "creatinine_files": 499,
+    "failed_to_parse": 2,
+    "incomplete_pairs": 4,
+    "complete_pairs": 497,
+    "samples_with_images": 100,
+    "repeats_per_sample": {
+      "min": 4,
+      "median": 5.0,
+      "max": 5,
+      "mean": 4.97
+    },
+    "repeats_distribution": {
+      "4": 3,
+      "5": 97
+    },
+    "lux": {
+      "min": 3369.2,
+      "mean": 3548.819114688129,
+      "max": 3705.0,
+      "sd": 48.85640720541265,
+      "cv_percent": 1.3766947715988664
+    },
+    "samples_images_without_label": [],
+    "samples_label_without_images": [],
+    "after_merge": {
+      "samples": 100,
+      "tests": 497
+    },
+    "lux_vs_class_kruskal": {
+      "H": 2.7717481157889345,
+      "p": 0.25010509789130003
+    }
+  },
+  "labels": {
+    "n_samples_in_excel": 100,
+    "class_counts": {
+      "NORMAL": 25,
+      "MICRO": 25,
+      "MACRO": 50
+    },
+    "consistency_with_uacr_percent": 100.0,
+    "n_inconsistent": 0,
+    "inconsistent_samples": [],
+    "n_samples_with_source_notes": 23,
+    "near_threshold": {
+      "±0.1": {
+        "n": 9,
+        "percent": 9.0
+      },
+      "±0.2": {
+        "n": 24,
+        "percent": 24.0
+      },
+      "±0.3": {
+        "n": 36,
+        "percent": 36.0
+      },
+      "±0.5": {
+        "n": 61,
+        "percent": 61.0
+      }
+    }
+  },
+  "runtime": {
+    "cumulative_seconds_at_end_of_stage": {
+      "1-5 setup, inventory, labels, merge, ROI": 212.3,
+      "6 feature extraction": 652.5,
+      "7 EDA": 665.0,
+      "8 cleansing": 670.1,
+      "9 analysis set and fold plan": 671.4
+    }
+  },
+  "features": {
+    "cache_source": "/content/Output_Hasil_TERPADU/0_Shared/cache/features_91614d0a03ef.pkl",
+    "cache_key": "91614d0a03ef",
+    "module_sha256": "0dd35f167e79ae415b4b7f1dd7b58e9340462085756710554763206720c91362",
+    "n_generated": 277,
+    "n_tests_extracted": 497,
+    "n_failed_pairs": 0,
+    "by_source": {
+      "Albumin": 118,
+      "Creatinine": 118,
+      "Cross-image": 41
+    },
+    "by_group": {
+      "Colour-channel statistics": 144,
+      "Texture & spatial": 52,
+      "Cross-image": 41,
+      "Colour indices": 34,
+      "Hue": 6
+    },
+    "roi_qc": [
+      {
+        "Image": "Albumin",
+        "method background": 497,
+        "Median ROI area (% of frame)": 71.2,
+        "Median specular (%)": 0.0
+      },
+      {
+        "Image": "Creatinine",
+        "method background": 497,
+        "Median ROI area (% of frame)": 71.2,
+        "Median specular (%)": 0.0
+      }
+    ]
+  },
+  "eda": {
+    "pairs_abs_rho_gt_0": {
+      "9": {
+        "n": 890,
+        "of": 38226,
+        "percent": 2.328258253544708
+      }
+    },
+    "pca": {
+      "var_pc1": 22.143627855778405,
+      "var_pc2": 17.401785924729634,
+      "var_first5": 64.63968700529139,
+      "silhouette_5pc": 0.028874592663563608
+    },
+    "construct_validity": [
+      {
+        "Feature–reference pair": "Albumin image ↔ log urine albumin",
+        "Best feature": "alb__gray_cv",
+        "Best ρ": 0.612,
+        "Number with |ρ| > 0.5": 18,
+        "Features tested": 118
+      },
+      {
+        "Feature–reference pair": "Creatinine image ↔ log urine creatinine",
+        "Best feature": "cre__ratio_RG",
+        "Best ρ": 0.463,
+        "Number with |ρ| > 0.5": 0,
+        "Features tested": 118
+      },
+      {
+        "Feature–reference pair": "Cross-image ↔ log UACR",
+        "Best feature": "x__gray_std_diff",
+        "Best ρ": 0.464,
+        "Number with |ρ| > 0.5": 0,
+        "Features tested": 41
+      }
+    ],
+    "lux": {
+      "min": 3369.2,
+      "max": 3705.0,
+      "sd": 48.85640720541265,
+      "cv_percent": 1.3766947715988664,
+      "n_features_abs_rho_gt_0_5": 0,
+      "n_features_tested": 277,
+      "median_abs_rho": 0.09785091866143542
+    }
+  },
+  "cleansing": {
+    "attrition": [
+      {
+        "Step": "0. Initial (all extracted pairs)",
+        "Tests": 497,
+        "Samples": 100,
+        "Features": 277
+      },
+      {
+        "Step": "1. Drop failed extractions / ±inf",
+        "Tests": 497,
+        "Samples": 100,
+        "Features": 277
+      },
+      {
+        "Step": "2. Drop duplicate images (MD5)",
+        "Tests": 494,
+        "Samples": 100,
+        "Features": 277
+      },
+      {
+        "Step": "3. Drop missing/constant features",
+        "Tests": 494,
+        "Samples": 100,
+        "Features": 277
+      },
+      {
+        "Step": "4. Drop multivariate outliers (per class)",
+        "Tests": 478,
+        "Samples": 100,
+        "Features": 277
+      },
+      {
+        "Step": "5. Drop features with ICC < 0.50",
+        "Tests": 478,
+        "Samples": 100,
+        "Features": 163
+      }
+    ],
+    "icc_threshold": 0.5,
+    "duplicates_dropped": 3,
+    "outliers_dropped": 16,
+    "features_dropped_missing_or_constant": 0,
+    "final": {
+      "tests": 478,
+      "samples": 100,
+      "features": 163,
+      "samples_per_class": {
+        "NORMAL": 25,
+        "MICRO": 25,
+        "MACRO": 50
+      },
+      "tests_per_class": {
+        "NORMAL": 121,
+        "MICRO": 118,
+        "MACRO": 239
+      }
+    },
+    "icc_by_source": {
+      "Albumin": {
+        "n_features": 118,
+        "n_pass": 90,
+        "median_icc": 0.6432938597623357
+      },
+      "Creatinine": {
+        "n_features": 118,
+        "n_pass": 41,
+        "median_icc": 0.46132810395894996
+      },
+      "Cross-image": {
+        "n_features": 41,
+        "n_pass": 32,
+        "median_icc": 0.6033766352127684
+      }
+    },
+    "icc_overall": {
+      "median": 0.5434749235224992,
+      "share_pass_percent": 58.844765342960294
+    },
+    "intra_sample_cv_median_percent": {
+      "feature": "alb__G_mean",
+      "median": 2.033683883115347
+    }
+  },
+  "analysis_set": {
+    "tests": 478,
+    "samples": 100,
+    "samples_per_class": {
+      "NORMAL": 25,
+      "MICRO": 25,
+      "MACRO": 50
+    },
+    "tests_per_class": {
+      "NORMAL": 121,
+      "MICRO": 118,
+      "MACRO": 239
+    },
+    "outer_folds": 5,
+    "outer_repeats": 2,
+    "fold_seed": "SEED + 100 + repeat",
+    "min_test_samples_per_fold": 20,
+    "max_test_samples_per_fold": 20
+  }
+}

@@ -1,0 +1,16 @@
+﻿number,file,caption
+S1,TabS01_image_inventory.csv,Summary of the micropad image dataset inventory.
+S2,TabS02_class_distribution_samples.csv,Class distribution at the sample level (classification target).
+S3,TabS03_group_vs_label.csv,Cross-tabulation of the Kelompok column (Albuminuria/Normal) against Label Kelas; shows why Kelompok is not used as the target.
+S4,TabS04_source_data_notes.csv,Data-quality notes recorded in the source file (copied verbatim from the PDF); they must be considered when interpreting results.
+S5,TabS05_clinical_descriptives.csv,Clinical-laboratory characteristics per class (median [Q1–Q3]) and Kruskal-Wallis test.
+S6,TabS06_near_threshold.csv,Share of samples whose laboratory UACR lies within a given distance (log10) of the 30 or 300 mg/g threshold. Samples inside these windows are intrinsically ambiguous: a small measurement error changes their class.
+S7,TabS07_unified_dataset.csv,Unified image–label dataset: number of samples and tests (image pairs) per class.
+S8,TabS08_feature_catalogue.csv,"Catalogue of all generated features (name, image source, method group)."
+S9,TabS09_feature_summary.csv,Number of generated features by method group and image source.
+S10,TabS10_roi_quality_control.csv,Quality control of ROI detection per image type.
+S11,TabS11_construct_validity.csv,"Summary of the construct validity of image features against laboratory values (Spearman, sample level)."
+S12,TabS12_lux_sensitive_features.csv,The 15 features most sensitive to lux.
+S13,TabS13_cleansing_attrition.csv,"Attrition table: number of tests, samples and features after each data-cleaning step."
+S14,TabS14_features_after_icc.csv,Number of features per method group before and after the reliability (ICC) filter.
+S15,TabS15_outer_fold_composition.csv,Fold plan - composition of the outer test folds (samples per class). Each sample is in exactly one test fold per repeat; class proportions are preserved by stratification.

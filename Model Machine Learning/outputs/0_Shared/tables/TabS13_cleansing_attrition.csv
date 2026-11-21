@@ -1,0 +1,7 @@
+﻿Step,Tests,Samples,Features
+0. Initial (all extracted pairs),497,100,277
+1. Drop failed extractions / ±inf,497,100,277
+2. Drop duplicate images (MD5),494,100,277
+3. Drop missing/constant features,494,100,277
+4. Drop multivariate outliers (per class),478,100,277
+5. Drop features with ICC < 0.50,478,100,163

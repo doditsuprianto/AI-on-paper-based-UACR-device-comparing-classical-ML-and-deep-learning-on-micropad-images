@@ -1,0 +1,17 @@
+﻿Rank,Model,Family,Macro-F1 (test level),Balanced acc.,MCC,QWK,AUC (OvR),Recall MICRO,Macro-F1 (sample level)
+1,SVM (RBF),Classical (hand-crafted features),0.510 ± 0.090,0.523,0.335,0.458,0.718,0.229,0.502
+2,efficientnet_b0 (fine-tuned),CNN fine-tuned (pretrained),0.508 ± 0.081,0.524,0.323,0.514,0.725,0.241,0.546
+3,mobilenet_v3_large (fine-tuned),CNN fine-tuned (pretrained),0.505 ± 0.071,0.522,0.313,0.484,0.723,0.295,0.53
+4,convnext_tiny (fine-tuned),CNN fine-tuned (pretrained),0.505 ± 0.080,0.518,0.322,0.511,0.727,0.265,0.522
+5,Logistic Regression,Classical (hand-crafted features),0.495 ± 0.078,0.504,0.279,0.405,0.679,0.327,0.507
+6,"mobilenet_v3_large (frozen, both)",CNN frozen + LR,0.488 ± 0.052,0.504,0.278,0.431,0.703,0.337,0.534
+7,Random Forest,Classical (hand-crafted features),0.477 ± 0.077,0.49,0.286,0.429,0.696,0.232,0.513
+8,"convnext_tiny (frozen, both)",CNN frozen + LR,0.459 ± 0.090,0.465,0.235,0.393,0.65,0.262,0.498
+9,resnet18 (fine-tuned),CNN fine-tuned (pretrained),0.456 ± 0.052,0.476,0.239,0.364,0.69,0.222,0.476
+10,k-NN,Classical (hand-crafted features),0.455 ± 0.075,0.479,0.267,0.399,0.669,0.133,0.462
+11,Gradient Boosting,Classical (hand-crafted features),0.441 ± 0.088,0.447,0.212,0.364,0.656,0.233,0.46
+12,"resnet18 (frozen, both)",CNN frozen + LR,0.439 ± 0.059,0.448,0.193,0.338,0.626,0.27,0.452
+13,"efficientnet_b0 (frozen, both)",CNN frozen + LR,0.435 ± 0.073,0.446,0.201,0.37,0.629,0.246,0.464
+14,Small CNN (from scratch),CNN from scratch,0.422 ± 0.051,0.432,0.168,0.279,0.62,0.297,0.45
+15,Baseline: stratified random guess,Baseline,0.332 ± 0.043,0.341,0.002,-0.048,0.503,0.289,0.344
+16,Baseline: majority class,Baseline,0.221 ± 0.023,0.333,0.0,0.0,0.5,0.0,0.221

@@ -1,0 +1,6 @@
+﻿Backbone,Pretrained weights loaded,Backbone parameters (M),Head parameters (M),Feature dim per assay
+resnet18,True,11.18,0.263,512
+efficientnet_b0,True,4.01,0.656,1280
+mobilenet_v3_large,True,2.97,0.493,960
+convnext_tiny,True,27.82,0.394,768
+scratch,n/a (from scratch),0.13,0.067,128

@@ -1,0 +1,7 @@
+﻿sample,true class,decision (clean process),max probability,max |P(images) − P(training row)|,max |P(clean process) − P(this process)|
+101,NORMAL,UNCERTAIN,0.41,0.0,0.0
+124,NORMAL,UNCERTAIN,0.434,0.0,0.0
+38,MICRO,MICRO,0.528,0.0,0.0
+129,MICRO,MICRO,0.598,0.0,0.0
+48,MACRO,MACRO,0.832,0.0,0.0
+5,MACRO,MACRO,0.817,0.0,0.0

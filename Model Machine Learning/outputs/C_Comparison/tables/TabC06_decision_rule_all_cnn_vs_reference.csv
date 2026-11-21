@@ -1,0 +1,10 @@
+﻿CNN-based model,Mean difference (CNN − reference),p (Wilcoxon),p (Nadeau–Bengio),p Holm (Wilcoxon),p Holm (Nadeau–Bengio),CNN significantly better,CNN significantly worse
+"resnet18 (frozen, both)",-0.0707,0.0195,0.1121,0.1562,0.7844,False,False
+"efficientnet_b0 (frozen, both)",-0.0748,0.0195,0.0966,0.1562,0.773,False,False
+"mobilenet_v3_large (frozen, both)",-0.022,0.3223,0.6222,1.0,1.0,False,False
+"convnext_tiny (frozen, both)",-0.0504,0.0645,0.2886,0.3223,1.0,False,False
+resnet18 (fine-tuned),-0.0533,0.0195,0.1443,0.1562,0.8657,False,False
+efficientnet_b0 (fine-tuned),-0.0018,0.9219,0.962,1.0,1.0,False,False
+mobilenet_v3_large (fine-tuned),-0.0046,0.9219,0.8802,1.0,1.0,False,False
+convnext_tiny (fine-tuned),-0.0051,0.9219,0.896,1.0,1.0,False,False
+Small CNN (from scratch),-0.0873,0.002,0.0668,0.0176,0.6016,False,True

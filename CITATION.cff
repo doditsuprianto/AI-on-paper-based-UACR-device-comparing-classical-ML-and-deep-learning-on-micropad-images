@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article and this archived release."
+title: "UACR micro-paper image classification: code, image dataset, results, diagnosis application and device design"
+type: software
+abstract: "Complete analysis notebook with stored results, image dataset and de-identified label table, PyQt5 application of the prototype device, and device design files for UACR (NORMAL/MICRO/MACRO) classification from paired paper-based colorimetric images."
+version: 1.0.0
+date-released: "2026-12-01"          # update to the release date
+license: MIT
+repository-code: "https://github.com/[ACCOUNT]/uacr-micropad-classification"
+doi: "10.5281/zenodo.[DOI]"  # concept DOI is recommended; fill in after the first Zenodo release
+keywords:
+  - point-of-care testing
+  - paper-based analytical device
+  - urine albumin-to-creatinine ratio
+  - colorimetric image analysis
+  - machine learning
+  - convolutional neural network
+authors:
+  - family-names: Suprianto
+    orcid: "https://orcid.org/0000-0002-5072-5574"
+    given-names: Dodit
+    affiliation: "Department of Electrical Engineering, Politeknik Negeri Malang, Malang 65141, Indonesia"
+  - family-names: Fahmi
+    orcid: "https://orcid.org/0009-0003-3859-5935"
+    given-names: Ahmad Luthfi
+    affiliation: "Department of Chemistry, Faculty of Science, Universitas Brawijaya, Malang 65145, Indonesia"
+  - family-names: Saptarini
+    orcid: "https://orcid.org/0009-0007-1107-1276"
+    affiliation: "Department of Chemistry, Faculty of Science, Universitas Brawijaya, Malang 65145, Indonesia"
+  - family-names: Izzuddin
+    orcid: "https://orcid.org/0009-0003-2332-5502"
+    given-names: Tiffany Azhar
+    affiliation: "Master Program in Computer Science, Faculty of Computer Science, Universitas Brawijaya, Malang 65145, Indonesia"
+  - family-names: Sabarudin
+    orcid: "https://orcid.org/0000-0002-3096-5087"
+    given-names: Akhmad
+    email: sabarjpn@ub.ac.id
+    affiliation: "Department of Chemistry, Faculty of Science, Universitas Brawijaya, Malang 65145, Indonesia"

@@ -1,0 +1,19 @@
+﻿CNN-based model,Baseline,Mean difference (model − baseline),p (Wilcoxon),p Holm
+"resnet18 (frozen, both)",Baseline: majority class,0.2177,0.002,0.0352
+"resnet18 (frozen, both)",Baseline: stratified random guess,0.1065,0.002,0.0352
+"efficientnet_b0 (frozen, both)",Baseline: majority class,0.2136,0.002,0.0352
+"efficientnet_b0 (frozen, both)",Baseline: stratified random guess,0.1024,0.002,0.0352
+"mobilenet_v3_large (frozen, both)",Baseline: majority class,0.2664,0.002,0.0352
+"mobilenet_v3_large (frozen, both)",Baseline: stratified random guess,0.1552,0.002,0.0352
+"convnext_tiny (frozen, both)",Baseline: majority class,0.2379,0.002,0.0352
+"convnext_tiny (frozen, both)",Baseline: stratified random guess,0.1268,0.002,0.0352
+resnet18 (fine-tuned),Baseline: majority class,0.235,0.002,0.0352
+resnet18 (fine-tuned),Baseline: stratified random guess,0.1239,0.002,0.0352
+efficientnet_b0 (fine-tuned),Baseline: majority class,0.2866,0.002,0.0352
+efficientnet_b0 (fine-tuned),Baseline: stratified random guess,0.1755,0.002,0.0352
+mobilenet_v3_large (fine-tuned),Baseline: majority class,0.2837,0.002,0.0352
+mobilenet_v3_large (fine-tuned),Baseline: stratified random guess,0.1726,0.002,0.0352
+convnext_tiny (fine-tuned),Baseline: majority class,0.2832,0.002,0.0352
+convnext_tiny (fine-tuned),Baseline: stratified random guess,0.1721,0.002,0.0352
+Small CNN (from scratch),Baseline: majority class,0.201,0.002,0.0352
+Small CNN (from scratch),Baseline: stratified random guess,0.0899,0.002,0.0352

@@ -1,0 +1,8 @@
+﻿Scenario (macro-F1 at 30 / 300 mg/g),Macro-F1
+True albumin + true creatinine (reference check),0.99
+True albumin + constant creatinine (median),0.727
+True albumin + creatinine predicted from image,0.799
+Albumin predicted from image + true creatinine,0.52
+Albumin predicted from image + constant creatinine,0.478
+Albumin and creatinine both predicted from images,0.467
+log UACR predicted directly from images,0.47

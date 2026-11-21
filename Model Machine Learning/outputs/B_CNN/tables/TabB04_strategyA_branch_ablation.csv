@@ -1,0 +1,6 @@
+﻿Backbone,both,albumin only,creatinine only
+resnet18,0.439,0.473,0.417
+efficientnet_b0,0.435,0.458,0.415
+mobilenet_v3_large,0.488,0.48,0.449
+convnext_tiny,0.459,0.425,0.411
+"SVM (RBF) (hand-crafted, both)",0.51,,

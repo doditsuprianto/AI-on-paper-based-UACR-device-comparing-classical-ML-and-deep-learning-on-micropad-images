@@ -1,0 +1,82 @@
+{
+  "EXCEL_NAME": "Data_Sampel_Penelitian_UACR_With_Label.xlsx",
+  "SHEET_NAME": "Data Sampel",
+  "ID_COL": "No Sampel",
+  "LABEL_COL": "Label Kelas",
+  "MANUAL_ROOT": "",
+  "IMG_EXT": [
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".tif",
+    ".tiff",
+    ".bmp"
+  ],
+  "CLASS_ORDER": [
+    "NORMAL",
+    "MICRO",
+    "MACRO"
+  ],
+  "LABEL_MAP": {
+    "MIKRO": "MICRO",
+    "MAKRO": "MACRO"
+  },
+  "BG_DIST": 18.0,
+  "ROI_ERODE_FRAC": 0.1,
+  "MAX_SIDE": 512,
+  "SPEC_V": 0.985,
+  "SPEC_S": 0.1,
+  "USE_CACHE": true,
+  "OUTER_FOLDS": 5,
+  "OUTER_REPEATS": 2,
+  "INNER_FOLDS": 3,
+  "BOOT_N": 1000,
+  "ICC_MIN": 0.5,
+  "CORR_THR": 0.9,
+  "K_GRID": [
+    5,
+    10,
+    20
+  ],
+  "CURVE_FOLDS": 5,
+  "DIAG_REPS": 3,
+  "SEED_SENS_N": 5,
+  "PERM_N": 100,
+  "ABL_REPEATS": 3,
+  "ABSTAIN_MIN_COVERAGE": 0.6,
+  "IMG_SIZE": 224,
+  "BACKBONES": [
+    "resnet18",
+    "efficientnet_b0",
+    "mobilenet_v3_large",
+    "convnext_tiny"
+  ],
+  "PRETRAINED": true,
+  "EPOCHS": 15,
+  "BATCH": 32,
+  "LR_BACKBONE": 0.0001,
+  "LR_HEAD": 0.001,
+  "WEIGHT_DECAY": 0.01,
+  "WARMUP_EPOCHS": 1,
+  "LABEL_SMOOTH": 0.1,
+  "DROPOUT": 0.3,
+  "AUG_BRIGHT": 0.03,
+  "FREEZE_BN": true,
+  "INCLUDE_SCRATCH": true,
+  "EMB_PCA": [
+    8,
+    16,
+    32
+  ],
+  "EMB_C": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "OUTER_REPEATS_CNN": 2,
+  "GRADCAM_PER_CLASS": 2,
+  "FINAL_FIT": true,
+  "REUSE_LEGACY_CNN_CACHE": false,
+  "FAST_MODE": false,
+  "OUTER_REPEATS_FINAL": 2
+}

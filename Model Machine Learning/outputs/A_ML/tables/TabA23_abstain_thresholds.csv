@@ -1,0 +1,16 @@
+﻿Quantity,test level (single measurement),sample level (repeats averaged)
+Level,test level (single measurement),sample level (repeats averaged)
+Threshold on max probability,0.44,0.53
+coverage,0.887,0.6
+n_accepted,424.0,60.0
+accuracy,0.611,0.733
+macro_f1,0.53,0.589
+balanced_acc,0.539,0.603
+recall_MICRO,0.215,0.143
+abstain_NORMAL,0.132,0.52
+abstain_MICRO,0.093,0.44
+abstain_MACRO,0.113,0.32
+ECE,0.06,0.046
+Coverage 95% CI,0.85 – 0.92,0.50 – 0.70
+Macro-F1 (accepted) 95% CI,0.448 – 0.598,0.445 – 0.731
+Macro-F1 without abstention,0.511,0.506

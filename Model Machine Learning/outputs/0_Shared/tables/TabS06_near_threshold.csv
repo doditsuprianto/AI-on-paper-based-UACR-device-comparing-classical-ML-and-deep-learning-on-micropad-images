@@ -1,0 +1,5 @@
+﻿Window (log10 units around a threshold),Equivalent fold-change,Samples inside the window,Share of samples (%)
+±0.1,×/÷ 1.26,9,9.0
+±0.2,×/÷ 1.58,24,24.0
+±0.3,×/÷ 2.00,36,36.0
+±0.5,×/÷ 3.16,61,61.0

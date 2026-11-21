@@ -1,0 +1,278 @@
+﻿feature,source,group
+alb__R_mean,Albumin,Colour-channel statistics
+alb__R_std,Albumin,Colour-channel statistics
+alb__R_median,Albumin,Colour-channel statistics
+alb__R_p10,Albumin,Colour-channel statistics
+alb__R_p90,Albumin,Colour-channel statistics
+alb__R_iqr,Albumin,Colour-channel statistics
+alb__R_skew,Albumin,Colour-channel statistics
+alb__R_kurt,Albumin,Colour-channel statistics
+alb__G_mean,Albumin,Colour-channel statistics
+alb__G_std,Albumin,Colour-channel statistics
+alb__G_median,Albumin,Colour-channel statistics
+alb__G_p10,Albumin,Colour-channel statistics
+alb__G_p90,Albumin,Colour-channel statistics
+alb__G_iqr,Albumin,Colour-channel statistics
+alb__G_skew,Albumin,Colour-channel statistics
+alb__G_kurt,Albumin,Colour-channel statistics
+alb__B_mean,Albumin,Colour-channel statistics
+alb__B_std,Albumin,Colour-channel statistics
+alb__B_median,Albumin,Colour-channel statistics
+alb__B_p10,Albumin,Colour-channel statistics
+alb__B_p90,Albumin,Colour-channel statistics
+alb__B_iqr,Albumin,Colour-channel statistics
+alb__B_skew,Albumin,Colour-channel statistics
+alb__B_kurt,Albumin,Colour-channel statistics
+alb__S_mean,Albumin,Colour-channel statistics
+alb__S_std,Albumin,Colour-channel statistics
+alb__S_median,Albumin,Colour-channel statistics
+alb__S_p10,Albumin,Colour-channel statistics
+alb__S_p90,Albumin,Colour-channel statistics
+alb__S_iqr,Albumin,Colour-channel statistics
+alb__S_skew,Albumin,Colour-channel statistics
+alb__S_kurt,Albumin,Colour-channel statistics
+alb__V_mean,Albumin,Colour-channel statistics
+alb__V_std,Albumin,Colour-channel statistics
+alb__V_median,Albumin,Colour-channel statistics
+alb__V_p10,Albumin,Colour-channel statistics
+alb__V_p90,Albumin,Colour-channel statistics
+alb__V_iqr,Albumin,Colour-channel statistics
+alb__V_skew,Albumin,Colour-channel statistics
+alb__V_kurt,Albumin,Colour-channel statistics
+alb__L_mean,Albumin,Colour-channel statistics
+alb__L_std,Albumin,Colour-channel statistics
+alb__L_median,Albumin,Colour-channel statistics
+alb__L_p10,Albumin,Colour-channel statistics
+alb__L_p90,Albumin,Colour-channel statistics
+alb__L_iqr,Albumin,Colour-channel statistics
+alb__L_skew,Albumin,Colour-channel statistics
+alb__L_kurt,Albumin,Colour-channel statistics
+alb__a_mean,Albumin,Colour-channel statistics
+alb__a_std,Albumin,Colour-channel statistics
+alb__a_median,Albumin,Colour-channel statistics
+alb__a_p10,Albumin,Colour-channel statistics
+alb__a_p90,Albumin,Colour-channel statistics
+alb__a_iqr,Albumin,Colour-channel statistics
+alb__a_skew,Albumin,Colour-channel statistics
+alb__a_kurt,Albumin,Colour-channel statistics
+alb__b_mean,Albumin,Colour-channel statistics
+alb__b_std,Albumin,Colour-channel statistics
+alb__b_median,Albumin,Colour-channel statistics
+alb__b_p10,Albumin,Colour-channel statistics
+alb__b_p90,Albumin,Colour-channel statistics
+alb__b_iqr,Albumin,Colour-channel statistics
+alb__b_skew,Albumin,Colour-channel statistics
+alb__b_kurt,Albumin,Colour-channel statistics
+alb__gray_mean,Albumin,Colour-channel statistics
+alb__gray_std,Albumin,Colour-channel statistics
+alb__gray_median,Albumin,Colour-channel statistics
+alb__gray_p10,Albumin,Colour-channel statistics
+alb__gray_p90,Albumin,Colour-channel statistics
+alb__gray_iqr,Albumin,Colour-channel statistics
+alb__gray_skew,Albumin,Colour-channel statistics
+alb__gray_kurt,Albumin,Colour-channel statistics
+alb__hue_cos,Albumin,Hue
+alb__hue_sin,Albumin,Hue
+alb__hue_R,Albumin,Hue
+alb__chr_r,Albumin,Colour indices
+alb__chr_g,Albumin,Colour indices
+alb__chr_b,Albumin,Colour indices
+alb__ratio_RG,Albumin,Colour indices
+alb__ratio_GB,Albumin,Colour indices
+alb__ratio_RB,Albumin,Colour indices
+alb__abs_R,Albumin,Colour indices
+alb__abs_G,Albumin,Colour indices
+alb__abs_B,Albumin,Colour indices
+alb__abs_gray,Albumin,Colour indices
+alb__exg,Albumin,Colour indices
+alb__chroma,Albumin,Colour indices
+alb__lab_hue_sin,Albumin,Colour indices
+alb__lab_hue_cos,Albumin,Colour indices
+alb__dE_white,Albumin,Colour indices
+alb__dE_spread,Albumin,Colour indices
+alb__gray_cv,Albumin,Colour indices
+alb__glcm_contrast,Albumin,Texture & spatial
+alb__glcm_dissimilarity,Albumin,Texture & spatial
+alb__glcm_homogeneity,Albumin,Texture & spatial
+alb__glcm_energy,Albumin,Texture & spatial
+alb__glcm_correlation,Albumin,Texture & spatial
+alb__glcm_entropy,Albumin,Texture & spatial
+alb__gray_entropy,Albumin,Texture & spatial
+alb__lbp_0,Albumin,Texture & spatial
+alb__lbp_1,Albumin,Texture & spatial
+alb__lbp_2,Albumin,Texture & spatial
+alb__lbp_3,Albumin,Texture & spatial
+alb__lbp_4,Albumin,Texture & spatial
+alb__lbp_5,Albumin,Texture & spatial
+alb__lbp_6,Albumin,Texture & spatial
+alb__lbp_7,Albumin,Texture & spatial
+alb__lbp_8,Albumin,Texture & spatial
+alb__lbp_9,Albumin,Texture & spatial
+alb__grad_mean,Albumin,Texture & spatial
+alb__grad_std,Albumin,Texture & spatial
+alb__lap_var,Albumin,Texture & spatial
+alb__ring_in,Albumin,Texture & spatial
+alb__ring_mid,Albumin,Texture & spatial
+alb__ring_out,Albumin,Texture & spatial
+alb__ring_grad,Albumin,Texture & spatial
+alb__asym_lr,Albumin,Texture & spatial
+alb__asym_tb,Albumin,Texture & spatial
+cre__R_mean,Creatinine,Colour-channel statistics
+cre__R_std,Creatinine,Colour-channel statistics
+cre__R_median,Creatinine,Colour-channel statistics
+cre__R_p10,Creatinine,Colour-channel statistics
+cre__R_p90,Creatinine,Colour-channel statistics
+cre__R_iqr,Creatinine,Colour-channel statistics
+cre__R_skew,Creatinine,Colour-channel statistics
+cre__R_kurt,Creatinine,Colour-channel statistics
+cre__G_mean,Creatinine,Colour-channel statistics
+cre__G_std,Creatinine,Colour-channel statistics
+cre__G_median,Creatinine,Colour-channel statistics
+cre__G_p10,Creatinine,Colour-channel statistics
+cre__G_p90,Creatinine,Colour-channel statistics
+cre__G_iqr,Creatinine,Colour-channel statistics
+cre__G_skew,Creatinine,Colour-channel statistics
+cre__G_kurt,Creatinine,Colour-channel statistics
+cre__B_mean,Creatinine,Colour-channel statistics
+cre__B_std,Creatinine,Colour-channel statistics
+cre__B_median,Creatinine,Colour-channel statistics
+cre__B_p10,Creatinine,Colour-channel statistics
+cre__B_p90,Creatinine,Colour-channel statistics
+cre__B_iqr,Creatinine,Colour-channel statistics
+cre__B_skew,Creatinine,Colour-channel statistics
+cre__B_kurt,Creatinine,Colour-channel statistics
+cre__S_mean,Creatinine,Colour-channel statistics
+cre__S_std,Creatinine,Colour-channel statistics
+cre__S_median,Creatinine,Colour-channel statistics
+cre__S_p10,Creatinine,Colour-channel statistics
+cre__S_p90,Creatinine,Colour-channel statistics
+cre__S_iqr,Creatinine,Colour-channel statistics
+cre__S_skew,Creatinine,Colour-channel statistics
+cre__S_kurt,Creatinine,Colour-channel statistics
+cre__V_mean,Creatinine,Colour-channel statistics
+cre__V_std,Creatinine,Colour-channel statistics
+cre__V_median,Creatinine,Colour-channel statistics
+cre__V_p10,Creatinine,Colour-channel statistics
+cre__V_p90,Creatinine,Colour-channel statistics
+cre__V_iqr,Creatinine,Colour-channel statistics
+cre__V_skew,Creatinine,Colour-channel statistics
+cre__V_kurt,Creatinine,Colour-channel statistics
+cre__L_mean,Creatinine,Colour-channel statistics
+cre__L_std,Creatinine,Colour-channel statistics
+cre__L_median,Creatinine,Colour-channel statistics
+cre__L_p10,Creatinine,Colour-channel statistics
+cre__L_p90,Creatinine,Colour-channel statistics
+cre__L_iqr,Creatinine,Colour-channel statistics
+cre__L_skew,Creatinine,Colour-channel statistics
+cre__L_kurt,Creatinine,Colour-channel statistics
+cre__a_mean,Creatinine,Colour-channel statistics
+cre__a_std,Creatinine,Colour-channel statistics
+cre__a_median,Creatinine,Colour-channel statistics
+cre__a_p10,Creatinine,Colour-channel statistics
+cre__a_p90,Creatinine,Colour-channel statistics
+cre__a_iqr,Creatinine,Colour-channel statistics
+cre__a_skew,Creatinine,Colour-channel statistics
+cre__a_kurt,Creatinine,Colour-channel statistics
+cre__b_mean,Creatinine,Colour-channel statistics
+cre__b_std,Creatinine,Colour-channel statistics
+cre__b_median,Creatinine,Colour-channel statistics
+cre__b_p10,Creatinine,Colour-channel statistics
+cre__b_p90,Creatinine,Colour-channel statistics
+cre__b_iqr,Creatinine,Colour-channel statistics
+cre__b_skew,Creatinine,Colour-channel statistics
+cre__b_kurt,Creatinine,Colour-channel statistics
+cre__gray_mean,Creatinine,Colour-channel statistics
+cre__gray_std,Creatinine,Colour-channel statistics
+cre__gray_median,Creatinine,Colour-channel statistics
+cre__gray_p10,Creatinine,Colour-channel statistics
+cre__gray_p90,Creatinine,Colour-channel statistics
+cre__gray_iqr,Creatinine,Colour-channel statistics
+cre__gray_skew,Creatinine,Colour-channel statistics
+cre__gray_kurt,Creatinine,Colour-channel statistics
+cre__hue_cos,Creatinine,Hue
+cre__hue_sin,Creatinine,Hue
+cre__hue_R,Creatinine,Hue
+cre__chr_r,Creatinine,Colour indices
+cre__chr_g,Creatinine,Colour indices
+cre__chr_b,Creatinine,Colour indices
+cre__ratio_RG,Creatinine,Colour indices
+cre__ratio_GB,Creatinine,Colour indices
+cre__ratio_RB,Creatinine,Colour indices
+cre__abs_R,Creatinine,Colour indices
+cre__abs_G,Creatinine,Colour indices
+cre__abs_B,Creatinine,Colour indices
+cre__abs_gray,Creatinine,Colour indices
+cre__exg,Creatinine,Colour indices
+cre__chroma,Creatinine,Colour indices
+cre__lab_hue_sin,Creatinine,Colour indices
+cre__lab_hue_cos,Creatinine,Colour indices
+cre__dE_white,Creatinine,Colour indices
+cre__dE_spread,Creatinine,Colour indices
+cre__gray_cv,Creatinine,Colour indices
+cre__glcm_contrast,Creatinine,Texture & spatial
+cre__glcm_dissimilarity,Creatinine,Texture & spatial
+cre__glcm_homogeneity,Creatinine,Texture & spatial
+cre__glcm_energy,Creatinine,Texture & spatial
+cre__glcm_correlation,Creatinine,Texture & spatial
+cre__glcm_entropy,Creatinine,Texture & spatial
+cre__gray_entropy,Creatinine,Texture & spatial
+cre__lbp_0,Creatinine,Texture & spatial
+cre__lbp_1,Creatinine,Texture & spatial
+cre__lbp_2,Creatinine,Texture & spatial
+cre__lbp_3,Creatinine,Texture & spatial
+cre__lbp_4,Creatinine,Texture & spatial
+cre__lbp_5,Creatinine,Texture & spatial
+cre__lbp_6,Creatinine,Texture & spatial
+cre__lbp_7,Creatinine,Texture & spatial
+cre__lbp_8,Creatinine,Texture & spatial
+cre__lbp_9,Creatinine,Texture & spatial
+cre__grad_mean,Creatinine,Texture & spatial
+cre__grad_std,Creatinine,Texture & spatial
+cre__lap_var,Creatinine,Texture & spatial
+cre__ring_in,Creatinine,Texture & spatial
+cre__ring_mid,Creatinine,Texture & spatial
+cre__ring_out,Creatinine,Texture & spatial
+cre__ring_grad,Creatinine,Texture & spatial
+cre__asym_lr,Creatinine,Texture & spatial
+cre__asym_tb,Creatinine,Texture & spatial
+x__R_mean_diff,Cross-image,Cross-image
+x__R_mean_lr,Cross-image,Cross-image
+x__G_mean_diff,Cross-image,Cross-image
+x__G_mean_lr,Cross-image,Cross-image
+x__B_mean_diff,Cross-image,Cross-image
+x__B_mean_lr,Cross-image,Cross-image
+x__S_mean_diff,Cross-image,Cross-image
+x__S_mean_lr,Cross-image,Cross-image
+x__V_mean_diff,Cross-image,Cross-image
+x__V_mean_lr,Cross-image,Cross-image
+x__L_mean_diff,Cross-image,Cross-image
+x__L_mean_lr,Cross-image,Cross-image
+x__gray_mean_diff,Cross-image,Cross-image
+x__gray_mean_lr,Cross-image,Cross-image
+x__chr_r_diff,Cross-image,Cross-image
+x__chr_r_lr,Cross-image,Cross-image
+x__chr_g_diff,Cross-image,Cross-image
+x__chr_g_lr,Cross-image,Cross-image
+x__chr_b_diff,Cross-image,Cross-image
+x__chr_b_lr,Cross-image,Cross-image
+x__abs_R_diff,Cross-image,Cross-image
+x__abs_R_lr,Cross-image,Cross-image
+x__abs_G_diff,Cross-image,Cross-image
+x__abs_G_lr,Cross-image,Cross-image
+x__abs_B_diff,Cross-image,Cross-image
+x__abs_B_lr,Cross-image,Cross-image
+x__abs_gray_diff,Cross-image,Cross-image
+x__abs_gray_lr,Cross-image,Cross-image
+x__chroma_diff,Cross-image,Cross-image
+x__chroma_lr,Cross-image,Cross-image
+x__dE_white_diff,Cross-image,Cross-image
+x__dE_white_lr,Cross-image,Cross-image
+x__gray_std_diff,Cross-image,Cross-image
+x__gray_std_lr,Cross-image,Cross-image
+x__glcm_contrast_diff,Cross-image,Cross-image
+x__glcm_contrast_lr,Cross-image,Cross-image
+x__glcm_homogeneity_diff,Cross-image,Cross-image
+x__glcm_homogeneity_lr,Cross-image,Cross-image
+x__a_mean_diff,Cross-image,Cross-image
+x__b_mean_diff,Cross-image,Cross-image
+x__exg_diff,Cross-image,Cross-image

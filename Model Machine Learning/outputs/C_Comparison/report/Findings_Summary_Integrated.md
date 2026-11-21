@@ -1,0 +1,18 @@
+# Integrated findings summary (generated automatically; every number comes from this run)
+
+- **Design.** 478 image pairs from 100 samples; one common analysis set and one fold plan (5 folds × 2 repeat(s), grouped by sample) for both pipelines; primary metric macro-F1 at test level.
+- **Path A (hand-crafted features + machine learning).** Best classical model: SVM (RBF), macro-F1 0.510 ± 0.090; baselines base: majority class 0.221, base: stratified random guess 0.332.
+- **Path B (CNN).** Best CNN-based variant: efficientnet_b0 (fine-tuned) (CNN fine-tuned (pretrained)), macro-F1 0.508 ± 0.081; best fine-tuned: efficientnet_b0 (fine-tuned) (0.508).
+- **Pre-specified decision rule.** A CNN replaces the classical pipeline only if it is higher on average and significantly better after Holm correction → **NOT MET**. Best CNN − reference = -0.002 (95 % CI -0.083 … +0.080; Holm p Wilcoxon 1.000, Nadeau–Bengio 1.000). The design cannot detect differences smaller than ≈ 0.081 macro-F1.
+- **Omnibus.** Friedman over 14 models: χ² = 40.8, p = 0.000104 (test level); sample level p = 0.161.
+- **Families.** Fine-tuned CNNs (mean of 4) − Classical (mean of 5): +0.018 (Holm p = 0.375); Frozen-embedding CNNs (mean of 4) − Classical (mean of 5): -0.020 (Holm p = 0.168); Fine-tuned (mean of 4) − Frozen (mean of 4): +0.038 (Holm p = 0.012). Significant: ['Fine-tuned (mean of 4) − Frozen (mean of 4)'].
+- **Fine-tuning vs frozen embeddings (per backbone).** resnet18 +0.017; efficientnet_b0 +0.073; mobilenet_v3_large +0.017; convnext_tiny +0.045. Significant after Holm: none.
+- **Pre-training vs scratch.** resnet18 +0.034; efficientnet_b0 +0.086; mobilenet_v3_large +0.083; convnext_tiny +0.082. Significant after Holm: ['efficientnet_b0: pretrained − scratch', 'mobilenet_v3_large: pretrained − scratch', 'convnext_tiny: pretrained − scratch'].
+- **Significantly worse than the reference:** ['Small CNN (from scratch)'].
+- **Sample level (secondary, not tested).** Reference 0.502 vs best CNN 0.546 macro-F1 when the repeats of a sample are averaged.
+- **Error overlap.** Of 478 tests: both correct 208, only classical 69, only CNN 67, both wrong 134; agreement of predicted classes κ = 0.47; accuracy difference (CNN − classical) -0.004 (cluster-bootstrap 95 % CI -0.074 … +0.061); an oracle that always picks the right model would reach 0.720 (CI 0.647 … 0.785). Two-step errors: classical 28%, CNN 17% of errors.
+- **Class-boundary effect.** Sample-level accuracy (classical / CNN) near, intermediate, far from a boundary: near a boundary: 0.45 / 0.52 (n=33); intermediate: 0.58 / 0.64 (n=33); far from a boundary: 0.79 / 0.74 (n=34).
+
+**What the evidence supports.** The pre-specified rule decides which pipeline is preferred; a non-significant difference between the pipelines means *inconclusive*, not *equal*. With ≈ 100 independent samples and 10 overlapping outer folds, differences below the minimum detectable difference quoted above cannot be resolved. A larger and more diverse sample set (more samples per class, several batches/devices) would be needed to separate pipelines whose scores differ by a few hundredths of macro-F1.
+
+**Limits.** One dataset, one acquisition set-up; the CNN recipe was fixed in advance, not tuned (the classical models were tuned in inner CV, so tuning effort differs between the paths); the best of 9 CNN variants is compared with the best of five classical models (winner’s curse affects both sides); fold-wise tests are indicative because folds overlap; Grad-CAM and perturbation checks (Stage 25) probe reliance on illumination/edge cues; their findings are reported there, not here.

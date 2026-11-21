@@ -1,0 +1,6 @@
+﻿Model,Final-epoch diagnostic F1,Best-epoch diagnostic F1 (peeking),Epoch of the maximum,Optimism of peeking,Final train loss,Final test log-loss,Min test log-loss,Epoch of min test log-loss
+resnet18 (fine-tuned),0.458,0.466,9,0.007,0.867,1.006,0.986,5
+efficientnet_b0 (fine-tuned),0.506,0.506,15,0.0,0.727,0.96,0.936,7
+mobilenet_v3_large (fine-tuned),0.504,0.506,14,0.001,0.735,0.956,0.947,11
+convnext_tiny (fine-tuned),0.502,0.52,10,0.018,0.662,0.976,0.947,8
+Small CNN (from scratch),0.424,0.432,7,0.008,0.923,1.084,1.053,6

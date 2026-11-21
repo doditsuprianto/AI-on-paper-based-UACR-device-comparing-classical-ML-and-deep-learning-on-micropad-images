@@ -1,0 +1,23 @@
+# ===== Dependencies of the Intelligent POCT Diagnostics (UACR) application =====
+# Python 3.11 (Armbian). Install in the SAME venv as the previous application:
+#     pip install -r requirements.txt
+#
+# --- NEW (required) for the UACR classification model --------------------------------
+scikit-learn==1.6.1        # MUST be exactly this: the .joblib model file was trained with this version
+scipy==1.16.3
+scikit-image==0.25.2
+joblib==1.6.0
+numpy==2.1.3               # if it conflicts with the older torch/ultralytics: see README_INSTALL.md section 3
+# --- NEW (required) for the PDF report -----------------------------------------------
+matplotlib>=3.8
+reportlab>=4.0
+pillow>=10.0
+# --- NEW (recommended) PDF viewer inside the application -----------------------------
+pymupdf>=1.24              # alternative without pip:  sudo apt install poppler-utils  (pdftoppm)
+#
+# --- ALREADY PRESENT in the previous application (do not reinstall if it already works) -
+# PyQt5            -> usually from apt:  python3-pyqt5
+# opencv           -> use the existing cv2; do NOT install opencv-python-headless alongside
+#                     (it overwrites the system cv2 and breaks the Qt plugin)
+# ultralytics      -> spot detection (model/best.pt)
+# lgpio            -> BH1750 sensor

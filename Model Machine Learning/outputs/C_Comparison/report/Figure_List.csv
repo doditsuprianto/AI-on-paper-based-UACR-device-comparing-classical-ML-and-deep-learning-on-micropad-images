@@ -1,0 +1,3 @@
+﻿number,file,caption
+C1,FigC01_leaderboard.png,"Unified comparison on the identical outer folds: (a) fold-wise macro-F1 of every model (colour = family; dots = folds), (b) Friedman mean ranks, (c) fold-wise family means and the reference model."
+C2,FigC02_error_overlap_boundary.png,"Do the two pipelines err on the same tests? (a) overlap of correct/incorrect predictions by true class, (b) adjacent vs two-step errors, (c) sample-level accuracy by distance of the laboratory UACR to the nearest class boundary."

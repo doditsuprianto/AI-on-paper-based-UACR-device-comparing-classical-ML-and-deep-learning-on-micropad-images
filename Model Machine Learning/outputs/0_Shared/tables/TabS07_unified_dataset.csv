@@ -1,0 +1,5 @@
+﻿label,Samples,Tests,Median tests per sample,Mean lux
+NORMAL,25.0,125.0,5.0,3535.2
+MICRO,25.0,123.0,5.0,3559.5
+MACRO,50.0,249.0,5.0,3550.3
+Total,100.0,497.0,5.0,3548.8

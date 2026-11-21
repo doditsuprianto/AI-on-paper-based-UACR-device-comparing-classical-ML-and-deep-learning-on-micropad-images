@@ -1,0 +1,5 @@
+﻿Contrast,Mean difference,95% CI (Nadeau–Bengio),Minimum detectable difference,Folds A better,p (Wilcoxon),p (Nadeau–Bengio),p Holm (Wilcoxon),p Holm (Nadeau–Bengio),Significant (Holm < 0.05)
+resnet18: pretrained − scratch,0.034,-0.045 … +0.113,0.0787,8/10,0.1055,0.3542,0.1055,0.3542,False
+efficientnet_b0: pretrained − scratch,0.0856,-0.012 … +0.183,0.0973,9/10,0.0059,0.0778,0.0176,0.2334,True
+mobilenet_v3_large: pretrained − scratch,0.0827,+0.005 … +0.160,0.0776,9/10,0.0039,0.0392,0.0156,0.1569,True
+convnext_tiny: pretrained − scratch,0.0822,-0.014 … +0.179,0.0965,9/10,0.0137,0.0861,0.0273,0.2334,True

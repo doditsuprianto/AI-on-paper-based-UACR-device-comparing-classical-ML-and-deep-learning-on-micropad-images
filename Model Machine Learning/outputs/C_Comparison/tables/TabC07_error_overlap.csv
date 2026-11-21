@@ -1,0 +1,5 @@
+﻿,Test level (n=478),Sample level (n=100)
+Both correct,208,49
+Only classical (SVM (RBF)) correct,69,12
+Only CNN (efficientnet_b0 (fine-tuned)) correct,67,14
+Both wrong,134,25

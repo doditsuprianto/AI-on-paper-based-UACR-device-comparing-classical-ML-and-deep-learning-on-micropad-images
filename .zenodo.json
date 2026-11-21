@@ -1,0 +1,15 @@
+{
+  "title": "UACR micro-paper image classification: code, image dataset, results, diagnosis application and device design",
+  "upload_type": "software",
+  "description": "<p>Code accompanying the article on classification of the urine albumin-to-creatinine ratio (NORMAL / MICRO / MACRO) from paired paper-based colorimetric images: (i) the image dataset (albumin and creatinine pads), a de-identified label table, a Python notebook that runs the complete analysis and the stored results (feature extraction, five classical machine-learning models, CNNs, sample-grouped nested cross-validation, measurement audit, deployment bundle); (ii) the PyQt5 application of the prototype point-of-care device; (iii) the device design files. Code: MIT; images, label table, results and design files: CC BY 4.0. Research prototype, not a medical device.</p>",
+  "creators": [
+    {"name": "Suprianto, Dodit", "orcid": "0000-0002-5072-5574", "affiliation": "Politeknik Negeri Malang, Indonesia"},
+    {"name": "Fahmi, Ahmad Luthfi", "orcid": "0009-0003-3859-5935", "affiliation": "Universitas Brawijaya, Indonesia"},
+    {"name": "Saptarini", "orcid": "0009-0007-1107-1276", "affiliation": "Universitas Brawijaya, Indonesia"},
+    {"name": "Izzuddin, Tiffany Azhar", "orcid": "0009-0003-2332-5502", "affiliation": "Universitas Brawijaya, Indonesia"},
+    {"name": "Sabarudin, Akhmad", "orcid": "0000-0002-3096-5087", "affiliation": "Universitas Brawijaya, Indonesia"}
+  ],
+  "license": "mit",
+  "keywords": ["point-of-care testing", "paper-based analytical device", "urine albumin-to-creatinine ratio", "colorimetric image analysis", "machine learning", "convolutional neural network"],
+  "access_right": "open"
+}

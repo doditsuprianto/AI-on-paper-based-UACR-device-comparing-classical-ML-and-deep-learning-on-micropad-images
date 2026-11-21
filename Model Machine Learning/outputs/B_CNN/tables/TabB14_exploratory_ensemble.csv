@@ -1,0 +1,4 @@
+﻿,Mean macro-F1,SD over folds
+SVM (RBF),0.51,0.09
+efficientnet_b0 (fine-tuned),0.508,0.081
+Ensemble (average of probabilities),0.504,0.077

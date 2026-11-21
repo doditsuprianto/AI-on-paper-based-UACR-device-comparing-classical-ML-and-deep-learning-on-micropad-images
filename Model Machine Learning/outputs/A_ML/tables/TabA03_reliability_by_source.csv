@@ -1,0 +1,4 @@
+﻿source,features,median_ICC,pct_ICC_ok,median |ρ| lux (retained)
+Albumin,118,0.643,76.271,0.075
+Creatinine,118,0.461,34.746,0.141
+Cross-image,41,0.603,78.049,0.031

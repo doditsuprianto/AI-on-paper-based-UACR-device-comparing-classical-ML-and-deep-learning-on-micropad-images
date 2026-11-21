@@ -1,0 +1,11 @@
+﻿number,file,caption
+C1,TabC01_leaderboard.csv,"Unified leaderboard on the identical 10 outer folds, sorted by mean macro-F1 at test level (mean ± SD over folds); sample-level macro-F1 is secondary."
+C2,TabC02_contrast_family_level.csv,"Family-level contrasts: fold-wise mean macro-F1 of a family of models, paired by outer fold; Wilcoxon and Nadeau–Bengio tests, Holm-corrected over the 3 contrasts. The minimum detectable difference is the smallest mean difference that the Nadeau–Bengio test could call significant given the observed fold-to-fold variability."
+C3,TabC03_contrast_best_vs_reference.csv,"Best CNN-based model and best fine-tuned model against the reference (best classical model), paired by outer fold. The 95 % interval and the minimum detectable difference show what this design can and cannot resolve."
+C4,TabC04_contrast_finetuning_effect.csv,"Effect of fine-tuning: each backbone fine-tuned vs the same backbone frozen (same folds), Holm-corrected over the backbones."
+C5,TabC05_contrast_pretraining_effect.csv,"Effect of ImageNet pre-training: each pretrained fine-tuned backbone vs the small CNN trained from scratch (same folds), Holm-corrected."
+C6,TabC06_decision_rule_all_cnn_vs_reference.csv,Pre-specified decision rule: every CNN-based model against the reference (SVM (RBF)); Holm-corrected over 9 contrasts. The CNN replaces the classical pipeline only if at least one CNN is both better on average and significantly better.
+C7,TabC07_error_overlap.csv,"Error overlap between the reference classical model and the best CNN-based model (pooled out-of-fold predictions, repeat 1). Exact McNemar p = 0.932 (test level), 0.845 (sample level; descriptive). Cluster-bootstrap 95 % CI of the accuracy difference (CNN − classical): -0.074 … +0.061."
+C8,TabC08_error_overlap_by_class.csv,"Error overlap by true class (test level, repeat 1)."
+C9,TabC09_error_severity.csv,"Error severity (test level, repeat 1): adjacent-class errors vs two-step errors (NORMAL ↔ MACRO), which are the clinically most serious."
+C10,TabC10_accuracy_by_boundary_distance.csv,"Sample-level accuracy (repeat 1) by distance of the laboratory UACR to the nearest class boundary (30 or 300 mg/g, log scale, tertiles of the 100 samples)."

@@ -1,0 +1,7 @@
+﻿Test image variant,Macro-F1,Accuracy,Predictions changed vs original (%),Share predicted MACRO (%)
+original,0.617,0.688,0.0,47.917
+brightness −15 %,0.57,0.583,32.292,36.458
+brightness −8 %,0.591,0.625,13.542,39.583
+brightness +8 %,0.618,0.677,13.542,45.833
+brightness +15 %,0.603,0.635,22.917,36.458
+grey-scale (colour removed),0.503,0.635,23.958,50.0
